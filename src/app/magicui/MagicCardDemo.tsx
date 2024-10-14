@@ -59,7 +59,7 @@ export function MagicCardDemo() {
                 <div className="mb-4 flex flex-col items-center">
                     <GiSmartphone className="text-[#e80566] mb-2 text-4xl md:text-6xl" />
                     <h1 className="text-lg font-semibold mb-2 text-base md:text-lg">App Development</h1>
-                    <p className="text-sm text-gray-700 text-base md:text-sm">Progressively empower business<br />"outside the box" thinking with</p>
+                    <p className="text-sm text-gray-700 text-base md:text-sm">Progressively empower business<br />&quot;outside the box!&quot;thinking with</p>
                     <Link href="#" className="text-xs mt-2 flex items-center hover:scale-110 duration-300">
                         Read More
                         <FaArrowRight className="ml-1 text-xs text-[#e80566]" />

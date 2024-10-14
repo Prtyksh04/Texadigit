@@ -1,5 +1,4 @@
 import React from 'react';
-import Link from 'next/link';
 import { MagicCardDemo } from '../magicui/MagicCardDemo';
 import { ShinyButtonDemo } from '../magicui/ShinyButtonDemo';
 

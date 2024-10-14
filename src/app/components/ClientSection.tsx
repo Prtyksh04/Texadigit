@@ -1,5 +1,5 @@
 'use client';
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import Image from 'next/image';
 
 const ClientSection: React.FC = () => {
@@ -14,9 +14,25 @@ const ClientSection: React.FC = () => {
         "/images/clients-logo-08.png",
     ];
 
-    // Determine animation duration based on screen size
-    const isSmallScreen = window.innerWidth < 768; // Change to your breakpoint
-    const animationDuration = isSmallScreen ? `${logos.length * 1.5}s` : `${logos.length * 1}s`; // Adjust durations as needed
+    const [animationDuration, setAnimationDuration] = useState('1s');
+    const [isSmallScreen, setIsSmallScreen] = useState(false);
+
+    useEffect(() => {
+        const handleResize = () => {
+            const smallScreen = window.innerWidth < 768; // Change to your breakpoint
+            setIsSmallScreen(smallScreen);
+            setAnimationDuration(smallScreen ? `${logos.length * 1.5}s` : `${logos.length * 1}s`);
+        };
+
+        // Set initial values
+        handleResize();
+        window.addEventListener('resize', handleResize);
+
+        // Cleanup the event listener on unmount
+        return () => {
+            window.removeEventListener('resize', handleResize);
+        };
+    }, [logos.length]);
 
     return (
         <section id="clientBG" className="client-section relative pt-16 pb-24 px-4 md:px-8">
