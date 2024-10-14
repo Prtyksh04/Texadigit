@@ -1,0 +1,32 @@
+@keyframes pulse {
+    0% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.1);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+  
+  .ripple {
+    position: absolute;
+    border-radius: 50%;
+    background: rgba(255, 105, 180, 0.7); /* Adjust the color as needed */
+    transform: scale(0);
+    animation: ripple-animation 0.6s linear forwards;
+    pointer-events: none; /* Prevent interaction with the ripple */
+  }
+  
+  @keyframes ripple-animation {
+    to {
+      transform: scale(4); /* Adjust this for the size of the ripple */
+      opacity: 0;
+    }
+  }
+  
+  .pulse {
+    animation: pulse 1.5s infinite;
+  }
+  
