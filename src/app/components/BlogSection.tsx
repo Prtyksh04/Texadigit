@@ -1,6 +1,7 @@
 import React from 'react';
 import Link from 'next/link';
 import { FaArrowRight } from 'react-icons/fa';
+import Image from 'next/image';
 
 const BlogSection: React.FC = () => {
     return (
@@ -45,7 +46,7 @@ const BlogSection: React.FC = () => {
                     {/* Blog Card 1 */}
                     <div className="w-full sm:w-1/2 md:w-1/4 h-full mb-6 shadow-lg bg-white rounded-lg overflow-hidden transition-transform transform hover:scale-105 duration-300">
                         <div className="relative">
-                            <img src="/images/WebsiteMain.jpg" className="card-img-top h-48 w-full object-cover" alt="Website Development" />
+                            <Image src="/images/WebsiteMain.jpg" className="card-img-top h-48 w-full object-cover" alt="Website Development" width={200} height={200}/>
                             <div className="meta-date text-yellow-500 text-3xl absolute top-2 left-2">
                                 <i className="fa fa-star" aria-hidden="true"></i>
                             </div>
@@ -66,7 +67,7 @@ const BlogSection: React.FC = () => {
                     {/* Blog Card 2 */}
                     <div className="w-full sm:w-1/2 md:w-1/4 h-full mb-6 shadow-lg bg-white rounded-lg overflow-hidden transition-transform transform hover:scale-105 duration-300">
                         <div className="relative">
-                            <img src="/images/AppMain.png" className="card-img-top h-48 w-full object-cover" alt="Mobile App Development" />
+                            <Image src="/images/AppMain.png" className="card-img-top h-48 w-full object-cover" alt="Mobile App Development"  width={200} height={200}/>
                             <div className="meta-date text-yellow-500 text-3xl absolute top-2 left-2">
                                 <i className="fa fa-star" aria-hidden="true"></i>
                             </div>
@@ -87,7 +88,7 @@ const BlogSection: React.FC = () => {
                     {/* Blog Card 3 */}
                     <div className="w-full sm:w-1/2 md:w-1/4 h-full mb-6 shadow-lg bg-white rounded-lg overflow-hidden transition-transform transform hover:scale-105 duration-300">
                         <div className="relative">
-                            <img src="/images/cctvComputerMainindex.png" className="card-img-top h-48 w-full object-cover" alt="CCTV Camera Installation" />
+                            <Image src="/images/cctvComputerMainindex.png" className="card-img-top h-48 w-full object-cover" alt="CCTV Camera Installation" width={200} height={200}/>
                             <div className="meta-date text-yellow-500 text-3xl absolute top-2 left-2">
                                 <i className="fa fa-star" aria-hidden="true"></i>
                             </div>

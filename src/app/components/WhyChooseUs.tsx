@@ -62,12 +62,12 @@ const WhyChooseUs: React.FC = () => {
                 <div className="w-1/2 p-2">
                   <div className="promo-item bg-white rounded-lg shadow-lg text-center">
                     <div className="promo-img mb-2 p-3">
-                      <img src="/images/increase.svg" alt="Increased Traffic" width="50" />
+                      <Image src="/images/increase.svg" alt="Increased Traffic" width={50} height={50} />
                     </div>
                     <h5 className="font-semibold text-base">Increased Traffic</h5>
                     <p className="text-sm">Now increase your website traffic with our best SEO service.</p>
                     <div className="promo-bottom-shape">
-                      <img src="/images/promo-box-shape-bottom.png" alt="shape" />
+                      <Image src="/images/promo-box-shape-bottom.png" alt="shape" width={500} height={500} />
                     </div>
                   </div>
                 </div>
@@ -76,12 +76,12 @@ const WhyChooseUs: React.FC = () => {
                 <div className="w-1/2 p-2 mt-4">
                   <div className="promo-item bg-white rounded-lg shadow-lg text-center">
                     <div className="promo-img mb-2 p-3">
-                      <img src="/images/search-engine.svg" alt="Site Optimisation" width="50" />
+                      <Image src="/images/search-engine.svg" alt="Site Optimisation" width={50} height={50} />
                     </div>
                     <h5 className="font-semibold text-base">Site Optimisation</h5>
                     <p className="text-sm">Now optimize your business with our best services.</p>
                     <div className="promo-bottom-shape">
-                      <img src="/images/promo-box-shape-bottom.png" alt="shape" />
+                      <Image src="/images/promo-box-shape-bottom.png" alt="shape" width={500} height={500} />
                     </div>
                   </div>
                 </div>
@@ -90,12 +90,12 @@ const WhyChooseUs: React.FC = () => {
                 <div className="w-1/2 p-2">
                   <div className="promo-item bg-white rounded-lg shadow-lg text-center">
                     <div className="promo-img mb-2 p-3">
-                      <img src="/images/credit-card.svg" alt="Cost-effectiveness" width="50" />
+                      <Image src="/images/credit-card.svg" alt="Cost-effectiveness" width={50} height={50} />
                     </div>
                     <h5 className="font-semibold text-base">Cost-effectiveness</h5>
                     <p className="text-sm">We can increase your business at the lowest cost.</p>
                     <div className="promo-bottom-shape">
-                      <img src="/images/promo-box-shape-bottom.png" alt="shape" />
+                      <Image src="/images/promo-box-shape-bottom.png" alt="shape" width={500} height={500} />
                     </div>
                   </div>
                 </div>
@@ -104,12 +104,12 @@ const WhyChooseUs: React.FC = () => {
                 <div className="w-1/2 p-2">
                   <div className="promo-item bg-white rounded-lg shadow-lg text-center">
                     <div className="promo-img mb-2 p-3">
-                      <img src="/images/interface.svg" alt="Page Rankings" width="50" />
+                      <Image src="/images/interface.svg" alt="Page Rankings" width={50} height={50} />
                     </div>
                     <h5 className="font-semibold text-base">Page Rankings</h5>
                     <p className="text-sm">We can increase your business ranking on Google and put you on top.</p>
                     <div className="promo-bottom-shape">
-                      <img src="/images/promo-box-shape-bottom.png" alt="shape" />
+                      <Image src="/images/promo-box-shape-bottom.png" alt="shape" width={500} height={500} />
                     </div>
                   </div>
                 </div>

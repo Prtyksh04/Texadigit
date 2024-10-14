@@ -21,10 +21,10 @@ const CallToActionSection: React.FC = () => {
 
       {/* CTA Images */}
       <div className="hidden lg:block absolute left-0 bottom-0 z-0">
-        <img src="/images/cta-1-man.svg" width="200" alt="cta-man" className="img-left" />
+        <Image src="/images/cta-1-man.svg" width={200} height={200} alt="cta-man" className="img-left" />
       </div>
       <div className="hidden lg:block absolute right-0 bottom-0 z-0">
-        <img src="/images/cta-1-mike.svg" width="200" alt="cta-mike" className="img-right" />
+        <Image src="/images/cta-1-mike.svg" width={200} height={200} alt="cta-mike" className="img-right" />
       </div>
 
       <div className="container mx-auto relative z-10 flex flex-col items-center">
