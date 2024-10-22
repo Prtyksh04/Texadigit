@@ -33,8 +33,14 @@ const AppDevelopment = () => {
                             Development
                         </Link>
                     </nav>
-                    <p className="text-gray-600 mt-4 text-xl text-justify">Mobile Application and Web Development isn't just a stage today yet additionally an entire success win condition for an effective undertakings or new companies. Texadigit is a seaward Mobile and Web application advancement organization in Jaipur, Rajasthan which helps undertakings and new companies building custom versatile and web applications. From breaking down procedure, convenience studies, and interface configuration, to back-end improvement and coordination our committed group of gifted versatile App designers in Jaipur additionally contribute their inventive plans to make the portable application exceptional and easy to use inside and out.</p>
-                    <p className="text-gray-600 mt-4 text-xl text-justify">We call ourselves as a cutting edge innovation counseling and versatile application improvement organization in Jaipur. since the versatile Application showcase is that the new developing business sector inside the advanced world, we've concentrated on giving the absolute best indent arrangement utilizing up and coming and drifting innovations like iOT, Big Data Analytics, Mobile-Cloud. we offer prerequisites examination, awesome UI/UX configuration, full lifecycle improvement process, Security incorporation, altered answer for iPhone Apps and Android Apps</p>
+                    <p className="text-gray-600 mt-4 text-xl text-justify">
+                        Mobile Application and Web Development isn&apos;t just a stage today but also an entire win-win situation for successful enterprises or startups. Texadigit is an offshore Mobile and Web application development company in Jaipur, Rajasthan, helping enterprises and startups build custom mobile and web applications. From analyzing processes, conducting usability studies, and interface design, to back-end development and integration, our dedicated team of skilled mobile app developers in Jaipur also contributes their innovative designs to make the mobile application unique and user-friendly in every way.
+                    </p>
+
+                    <p className="text-gray-600 mt-4 text-xl text-justify">
+                        We call ourselves a cutting-edge technology consulting and mobile application development company in Jaipur. Since the mobile application market is the new emerging sector in the digital world, we&apos;ve focused on providing top-notch solutions using up-and-coming and trending technologies like IoT, Big Data Analytics, and Mobile-Cloud. We offer requirements analysis, exceptional UI/UX design, a full lifecycle development process, security integration, and custom solutions for iPhone and Android apps.
+                    </p>
+
                     <TextAdvice
                         advice="Texadigit keeps surprising us with their capability to adapt to almost any request we have and to keep themselves at the leading edge of the software technologies."
                         name="Mr. Nitin Chanchlani"

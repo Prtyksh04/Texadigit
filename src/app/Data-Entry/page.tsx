@@ -33,8 +33,14 @@ const DataEntry = () => {
                             Save Time
                         </Link>
                     </nav>
-                    <p className="text-gray-600 mt-4 text-xl text-justify">Till now, we've worked on quite many projects and therefore the experience assists us to figure challengingly on the info services of the clients. Our services include online data entry to conversion , quick copy paste form processing, processing , data conversions without failure. There are several companies which are totally pleased with the invoice data entry services and extra sorts of legal data entry at an equivalent time.</p>
-                    <p className="text-gray-600 mt-4 text-xl text-justify">No matter, you've got Bills and Receipts entry, Labels entry, card data entry or maybe Coupon Redemptions entry, we've the passionate team which works on stretched deadlines. Considering the features of the clients, the simplest quality of the work are going to be answered and therefore the task will get delivered at the proper time. The ideas that are employed by the team are highly creative and confirm for wonderful results with none kind of failure. within the previous couple of years, we've comes up because the best offshore company so as to outsource the info needs of any size and sort .</p>
+                    <p className="text-gray-600 mt-4 text-xl text-justify">
+                        Till now, we&apos;ve worked on many projects, and the experience enables us to tackle challenging client data services. Our offerings include online data entry, conversion, quick copy-paste form processing, and data conversions without error. Several companies are fully satisfied with our invoice data entry services and various other forms of legal data entry at the same time.
+                    </p>
+
+                    <p className="text-gray-600 mt-4 text-xl text-justify">
+                        Whether it&apos;s Bills and Receipts entry, Labels entry, card data entry, or even Coupon Redemptions entry, we have a passionate team that works to meet tight deadlines. With client requirements in mind, we ensure the highest quality of work, delivering tasks on time. The ideas employed by our team are highly creative, guaranteeing excellent results without any form of failure. Over the past few years, we&apos;ve emerged as the best offshore company to outsource data needs of any size or type.
+                    </p>
+
                     <TextAdvice
                         advice="You can have data without information, but you cannot have information without data."
                         name="Daniel Keys Moran"

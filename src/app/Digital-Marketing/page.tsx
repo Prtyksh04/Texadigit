@@ -32,15 +32,22 @@ const DigitalMarketing = () => {
                             Grow your Business
                         </Link>
                     </nav>
-                    <p className="text-gray-600 mt-4 text-xl text-justify">Every large and small business requires digital marketing services. We include the whole range of digital marketing campaigns like SEO, PPC, Email Marketing, Social Media Marketing, and Local Business listing to increase business revenue.</p>
-                    <p className="text-gray-600 mt-4 text-xl text-justify"><strong className="text-gray-500">Grow Your Business</strong> we'll offer a 360 digital marketing service to you that's drives traffic sales and can provide a 100% return on your investment. we've helped quite 1000 customers increase their online businesses through effective digital mix technology.</p>
+                    <p className="text-gray-600 mt-4 text-xl text-justify">
+                        Every large and small business requires digital marketing services. We offer a complete range of digital marketing campaigns including SEO, PPC, Email Marketing, Social Media Marketing, and Local Business listings to help increase business revenue.
+                    </p>
+
+                    <p className="text-gray-600 mt-4 text-xl text-justify">
+                        <strong className="text-gray-500">Grow Your Business</strong> — we&apos;ll offer a 360° digital marketing service that drives traffic, increases sales, and delivers a 100% return on investment. We&apos;ve helped over 1,000 customers grow their online businesses through an effective digital marketing mix and advanced technologies.
+                    </p>
+
                     <div>
                         <div className="flex w-4/5 h-auto gap-x-8 mt-4 mb-8">
                             <div className="border-l-2 border-[#e80566] h-32"></div>
                             <div>
                                 <h3 className="text-xl text-justify mt-4 line-clamp-2">
-                                    We are one of Jaipur's Largest Digital Marketing Services provider company with their best innovative team of Internet marketing specialist.
+                                    We are one of Jaipur&apos;s largest digital marketing service providers, with a highly innovative team of internet marketing specialists.
                                 </h3>
+
                                 <div className="flex">
                                     <p>___</p>
                                     <p className="m-2">Mr. Pratyaksh Saini</p>
