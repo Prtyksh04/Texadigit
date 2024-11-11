@@ -52,7 +52,7 @@ const CallToActionVideo: React.FC = () => {
                     <div className="relative z-10">
                         <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold mb-4">Best IT Solution for you !!</h2>
                         <p className="text-base md:text-lg mb-6 text-justify">
-                            Texadigit is the best IT Service Provider. Texadigit is offering the best Digital Marketing services, including SEO, Paid Search, Social Media, Consulting, Lead Generation, Brand Reputation Management, and Web Development Services.
+                            Imagine Digi is the best IT Service Provider. Imagine Digi is offering the best Digital Marketing services, including SEO, Paid Search, Social Media, Consulting, Lead Generation, Brand Reputation Management, and Web Development Services.
                         </p>
                         <Link href="tel:7733844020" legacyBehavior>
                             <a className="bg-[#6a027c] hover:bg-[#e80566] hover:border-[#6a027c] border-2 border-[#6a027c] text-white font-semibold py-2 px-4 md:py-3 md:px-6 rounded-md inline-block transition duration-300">

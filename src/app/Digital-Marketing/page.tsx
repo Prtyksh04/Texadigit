@@ -4,6 +4,7 @@ import Link from "next/link";
 import CategoriesSection from "../components/Sidebar";
 import Footer from "../components/Footer";
 import Navbar from "../components/Navbar";
+import TextAdvice from "../components/TextAdvice";
 
 const DigitalMarketing = () => {
     return (
@@ -13,67 +14,60 @@ const DigitalMarketing = () => {
                 title="Digital Marketing"
                 breadcrumbText="Digital Marketing"
             />
-            <div className="flex m-16 gap-x-8">
-                <CategoriesSection />
-                <div>
+            <div className="flex flex-col md:flex-row m-4 md:m-16 gap-4 md:gap-8">
+                <div className="w-full md:w-1/4">
+                    <CategoriesSection />
+                </div>
+                <div className="w-full md:w-3/4">
                     <Image
                         alt="WebDevelopment"
                         src="/images/DigitalMarketing.jpg"
                         height={800}
                         width={1000}
+                        className="w-full h-auto"
                     />
-                    <h1 className="text-3xl font-semibold mt-4">Digital Marketing</h1>
-                    <nav className="flex items-center gap-2 text-md text-gray-600">
+                    <h1 className="text-2xl md:text-3xl font-semibold mt-4">
+                        Digital Marketing
+                    </h1>
+                    <nav className="flex items-center gap-2 text-sm md:text-md text-gray-600">
                         <Link href="/" className="hover:underline">
                             Marketing
                         </Link>
-                        <span >/</span>
+                        <span>/</span>
                         <Link href="/" className="hover:underline">
                             Grow your Business
                         </Link>
                     </nav>
-                    <p className="text-gray-600 mt-4 text-xl text-justify">
+                    <p className="text-gray-600 mt-4 text-justify md:text-xl">
                         Every large and small business requires digital marketing services. We offer a complete range of digital marketing campaigns including SEO, PPC, Email Marketing, Social Media Marketing, and Local Business listings to help increase business revenue.
                     </p>
 
-                    <p className="text-gray-600 mt-4 text-xl text-justify">
+                    <p className="text-gray-600 mt-4 text-justify md:text-xl">
                         <strong className="text-gray-500">Grow Your Business</strong> — we&apos;ll offer a 360° digital marketing service that drives traffic, increases sales, and delivers a 100% return on investment. We&apos;ve helped over 1,000 customers grow their online businesses through an effective digital marketing mix and advanced technologies.
                     </p>
 
-                    <div>
-                        <div className="flex w-4/5 h-auto gap-x-8 mt-4 mb-8">
-                            <div className="border-l-2 border-[#e80566] h-32"></div>
-                            <div>
-                                <h3 className="text-xl text-justify mt-4 line-clamp-2">
-                                    We are one of Jaipur&apos;s largest digital marketing service providers, with a highly innovative team of internet marketing specialists.
-                                </h3>
-
-                                <div className="flex">
-                                    <p>___</p>
-                                    <p className="m-2">Mr. Pratyaksh Saini</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    {/* <h1>Something we have add here</h1> */}
-                    <p className="text-gray-600 mt-4 text-xl text-justify">
+                    <TextAdvice
+                        advice="We are one of Jaipur&apos;s largest digital marketing service providers, with a highly innovative team of internet marketing specialists."
+                        name="Mr. Nitin Chanchlani"
+                    />
+                    <p className="text-gray-600 mt-4 text-justify md:text-xl">
                         Digital Marketing may be a very wide function, it can include everything from online brand reputation, market price , PR (PR), product, and services pricing and lots of more. Mostly we specialise in the marketing communications side of the equation and the way this compares to finish client sales.
                     </p>
-                    <ol className="list-decimal ml-12 text-gray-500 text-lg">
+                    <ol className="list-decimal ml-6 md:ml-12 text-gray-500 text-sm md:text-lg mt-4">
                         <li>SMO</li>
                         <li>SEO</li>
                         <li>EMAIL MARKETING</li>
                         <li>Social Media Marketing</li>
                         <li>PPC (Per Page Click)</li>
                     </ol>
-                    <div className="mt-4 flex gap-x-2 ml-8">
+                    <div className="mt-8 flex flex-wrap gap-x-4 gap-y-2 ml-0 md:ml-8">
                         <button className="bg-gray-200 py-2 px-2 rounded-md hover:bg-[#65258a] hover:text-white whitespace-nowrap">WEB DEVELOPMENT</button>
                         <button className="bg-gray-200 py-2 px-2 rounded-md hover:bg-[#65258a] hover:text-white whitespace-nowrap">APP DEVELOPMENT</button>
                         <button className="bg-gray-200 py-2 px-2 rounded-md hover:bg-[#65258a] hover:text-white whitespace-nowrap">CCTV CAMERA INSTALLATION</button>
                         <button className="bg-gray-200 py-2 px-2 rounded-md hover:bg-[#65258a] hover:text-white whitespace-nowrap">COMPUTER LAB INSTALLATION</button>
                         <button className="bg-gray-200 py-2 px-2 rounded-md hover:bg-[#65258a] hover:text-white whitespace-nowrap">DATA ENTRY</button>
                     </div>
-                    <hr className="w-3/2 mt-12" />
+                    <hr className="w-full border-gray-300 mt-12" />
                 </div>
             </div>
             <Footer />

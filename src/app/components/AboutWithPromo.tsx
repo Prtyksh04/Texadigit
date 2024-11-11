@@ -30,7 +30,7 @@ const AboutWithPromo: React.FC = () => {
                     <div className="w-full lg:w-1/2 p-4">
                         <div className="about-content-wrap">
                             <h2 className="text-[#e80566] font-medium">Complete IT Solution</h2>
-                            <h2 className="text-2xl font-bold mb-4">Why Choose Texadigit?</h2>
+                            <h2 className="text-2xl font-bold mb-4">Why Choose Imagine Digi</h2>
                             <hr className="border-b-2 border-[#e80566] mb-4 animate-hrAboutWithPromo" />
                             <span className="animate-border mb-4 block w-16 h-1 bg-secondary mx-auto"></span>
                             <p className="mb-4 text-justify text-[#707070]">
@@ -39,8 +39,8 @@ const AboutWithPromo: React.FC = () => {
 
                             <ul className="check-list-info list-disc pl-5 text-justify text-[#707070]">
                                 <li className="mb-2">Choosing the best IT service provider is one of the most important decisions you can make for the success of your business. If you are a business that is seeking expansion, then updating your IT strategies is of utmost importance.</li>
-                                <li className="mb-2"><strong className='text-gray-500'>Professional Consulting Services</strong> - Texadigit provides professional & best services to our clients with 100% satisfaction.</li>
-                                <li className="mb-2"><strong className='text-gray-500'>24/7 Support Help Center</strong> – Texadigit provides a 24*7 support center to help our customers.</li>
+                                <li className="mb-2"><strong className='text-gray-500'>Professional Consulting Services</strong> - Imagine Digi provides professional & best services to our clients with 100% satisfaction.</li>
+                                <li className="mb-2"><strong className='text-gray-500'>24/7 Support Help Center</strong> – Imagine Digi provides a 24*7 support center to help our customers.</li>
                                 <li>Providing professional quality services to all our clients is of utmost importance to us. To achieve this, we have successfully put all the necessary resources in place, from skills and technology to the ability of our team.</li>
                             </ul>
                         </div>

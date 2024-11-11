@@ -50,10 +50,10 @@ const WebsiteDevelopment = () => {
                     </nav>
 
                     {/* Content paragraphs */}
-                    <p className="text-gray-600 mt-4 text-base md:text-xl">
+                    <p className="text-gray-600 mt-4 text-justify md:text-xl">
                         Your website represents your brand. A site that’s slow, unreliable, or difficult to use may drive customers and prospects away. Internal teams also suffer when small website changes are slow to implement, and larger changes seem impossible.
                     </p>
-                    <p className="text-gray-600 mt-4 text-base md:text-xl">
+                    <p className="text-gray-600 mt-4 text-justify md:text-xl">
                         Starting a web development project may feel overwhelming, leading businesses to stick with the status quo—risking missed opportunities and competitive disadvantages.
                         With over 5 years of experience developing on leading CMS platforms and a well-refined project management process, Blue Fountain Media builds high-performing sites across various industries. We’ve tackled numerous challenges for our clients and achieved exceptional results along the way.
                     </p>

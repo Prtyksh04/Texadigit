@@ -21,7 +21,7 @@ const Testimonials: React.FC = () => {
             name: "Anil Goyel",
             title: "",
             image: "/images/port-1.jpg",
-            feedback: "I needed a better and efficient team to take my business further in Jaipur, and Texadigit is the best for that."
+            feedback: "I needed a better and efficient team to take my business further in Jaipur, and Imagine Digi is the best for that."
         },
     ];
 
@@ -83,7 +83,7 @@ const Testimonials: React.FC = () => {
                             </h2>
                             <hr className="border-b-2 border-[#e80566] mb-4 animate-hrTestimonial" />
                             <span className="animate-border mb-4 block"></span>
-                            <p className="mb-4 text-base">Texadigit also provides the best service to its clients and we are <br /> deliver projects to our clients within the committed time with <br />
+                            <p className="mb-4 text-base">Imagine Digi also provides the best service to its clients and we are <br /> deliver projects to our clients within the committed time with <br />
                                 100% accuracy.</p>
                             <h3>
                                 <Link href="https://g.page/texadigit/review?mp" className="text-[#e80566] hover:underline">Give Your Review</Link>

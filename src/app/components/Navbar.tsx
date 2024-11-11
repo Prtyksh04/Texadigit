@@ -7,6 +7,9 @@ const Navbar: React.FC = () => {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
     const [isAboutOpen, setIsAboutOpen] = useState(false);
     const [isServicesOpen, setIsServicesOpen] = useState(false);
+    const [isWebDevOpen, setIsWebDevOpen] = useState(false);
+    const [isAppDevOpen, setIsAppDevOpen] = useState(false);
+    const [isDigitalMarketingOpen, setIsDigitalMarketingOpen] = useState(false);
     const dropdownRef = useRef<HTMLDivElement | null>(null);
 
     useEffect(() => {
@@ -14,6 +17,9 @@ const Navbar: React.FC = () => {
             if (dropdownRef.current && !dropdownRef.current.contains(event.target as Node)) {
                 setIsAboutOpen(false);
                 setIsServicesOpen(false);
+                setIsWebDevOpen(false);
+                setIsAppDevOpen(false);
+                setIsDigitalMarketingOpen(false);
                 setIsMenuOpen(false);
             }
         };
@@ -28,27 +34,65 @@ const Navbar: React.FC = () => {
         setIsMenuOpen(!isMenuOpen);
     };
 
-    const toggleDropdown = (dropdown: 'about' | 'services') => {
+    const toggleDropdown = (dropdown: 'about' | 'services' | 'webdev' | 'appdev' | 'digital', event?: React.MouseEvent) => {
+        if (event) {
+            event.stopPropagation();
+        }
+
         if (dropdown === 'about') {
             setIsAboutOpen(!isAboutOpen);
             setIsServicesOpen(false);
-        } else {
+            setIsWebDevOpen(false);
+        } else if (dropdown === 'services') {
             setIsServicesOpen(!isServicesOpen);
             setIsAboutOpen(false);
+            if (!isServicesOpen) {
+                setIsWebDevOpen(false);
+            }
+        } else if (dropdown === 'webdev') {
+            if (isAppDevOpen) {
+                setIsAppDevOpen(!isAppDevOpen);
+            }
+            if (isDigitalMarketingOpen) {
+                setIsDigitalMarketingOpen(!isDigitalMarketingOpen);
+            }
+            setIsWebDevOpen(!isWebDevOpen);
+        } else if (dropdown === 'appdev') {
+            setIsAppDevOpen(!isAppDevOpen);
+            if (isWebDevOpen) {
+                setIsWebDevOpen(!isWebDevOpen);
+            }
+            if (isDigitalMarketingOpen) {
+                setIsDigitalMarketingOpen(!isDigitalMarketingOpen);
+            }
+        } else if (dropdown === 'digital') {
+            setIsDigitalMarketingOpen(!isDigitalMarketingOpen);
+            if(isWebDevOpen){
+                setIsWebDevOpen(false);
+            }
+            if(isAppDevOpen){
+                setIsAppDevOpen(false);
+            }
         }
     };
 
     return (
         <header className="header">
-            <nav className="navbar fixed top-0 w-full bg-gradient-to-r from-purple-500 to-pink-500 text-white shadow-lg z-50 backdrop-blur-lg">
+            <nav className="navbar fixed top-0 w-full bg-gradient-to-r from-[#432E54] to-[#AE445A] text-white shadow-lg z-50 backdrop-blur-lg">
                 <div className="container mx-auto flex items-center justify-between px-4 py-2">
                     <Link href="/" className="text-lg font-bold text-white">
-                        <Image src="/images/logo-color.jpg"
+                        <Image src="/images/png/Colorlogowithbackground.png"
+                            alt='logo'
+                            className='cursor-pointer'
+                            width={80}
+                            height={16}
+                        />
+                        {/* <Image src="/images/logo-color.jpg"
                             alt='logo'
                             className='cursor-pointer'
                             width={125}
                             height={45}
-                        />
+                        /> */}
                     </Link>
 
                     {/* Mobile Menu Button */}
@@ -73,7 +117,7 @@ const Navbar: React.FC = () => {
                             <li className="relative group">
                                 <div
                                     className="flex items-center justify-between py-2 px-4 rounded cursor-pointer transition-colors duration-300"
-                                    onClick={() => toggleDropdown('about')}
+                                    onClick={(e) => toggleDropdown('about', e)}
                                 >
                                     About
                                     <svg
@@ -87,20 +131,19 @@ const Navbar: React.FC = () => {
                                     </svg>
                                 </div>
 
-                                {/* Dropdown Menu */}
+                                {/* About Dropdown Menu */}
                                 <div
-                                    className={`lg:absolute left-0 mt-0 w-full lg:w-48 bg-white shadow-md rounded-md overflow-hidden z-10 transition-all duration-300 ease-in-out ${
-                                        isAboutOpen ? 'max-h-48 opacity-100' : 'max-h-0 opacity-0'
-                                    }`}
+                                    className={`lg:absolute left-0 mt-0 w-full lg:w-48 bg-white shadow-md rounded-md overflow-hidden z-20 transition-all duration-300 ease-in-out ${isAboutOpen ? 'block' : 'hidden'
+                                        }`}
                                 >
                                     <ul>
                                         <li>
-                                            <Link href="/about-us" className="block px-4 py-2 text-sm text-gray-700 hover:bg-[#65258a] hover:text-white transition-colors">
+                                            <Link href="/About-Us" className="block px-4 py-2 text-sm text-gray-700 hover:bg-[#65258a] hover:text-white transition-colors">
                                                 About Us
                                             </Link>
                                         </li>
                                         <li>
-                                            <Link href="/about-team" className="block px-4 py-2 text-sm text-gray-700 hover:bg-[#65258a] hover:text-white transition-colors">
+                                            <Link href="/About-Team" className="block px-4 py-2 text-sm text-gray-700 hover:bg-[#65258a] hover:text-white transition-colors">
                                                 About Team
                                             </Link>
                                         </li>
@@ -110,9 +153,9 @@ const Navbar: React.FC = () => {
 
                             {/* Services Dropdown */}
                             <li className="relative group">
-                                <div 
+                                <div
                                     className="flex items-center justify-between py-2 px-4 rounded cursor-pointer transition-colors duration-300"
-                                    onClick={() => toggleDropdown('services')}
+                                    onClick={(e) => toggleDropdown('services', e)}
                                 >
                                     Services
                                     <svg
@@ -126,25 +169,140 @@ const Navbar: React.FC = () => {
                                     </svg>
                                 </div>
                                 <div
-                                    className={`lg:absolute left-0 mt-0 w-full lg:w-48 bg-white shadow-md rounded-md overflow-hidden z-10 transition-all duration-300 ease-in-out ${
-                                        isServicesOpen ? 'max-h-48 opacity-100' : 'max-h-0 opacity-0'
-                                    }`}
+                                    className={`lg:absolute left-0 mt-0 w-full lg:w-48 bg-white shadow-md rounded-md overflow-visible z-20 transition-all duration-300 ease-in-out ${isServicesOpen ? 'block' : 'hidden'
+                                        }`}
                                 >
                                     <ul>
-                                        <li>
-                                            <Link href="/services/web-development" className="block px-4 py-2 text-sm text-gray-700 hover:bg-[#65258a] hover:text-white">
-                                                Website Development
-                                            </Link>
+                                        {/* Website Development with nested dropdown */}
+                                        <li className="relative">
+                                            <div
+                                                className="flex items-center justify-between px-4 py-2 text-sm text-gray-700 hover:bg-[#65258a] hover:text-white cursor-pointer group"
+                                                onClick={(e) => toggleDropdown('webdev', e)}
+                                            >
+                                                Web Development
+                                                <svg
+                                                    className={`ml-2 h-4 w-4 transition-transform duration-500 ${isWebDevOpen ? '-rotate-90' : ''}`}
+                                                    xmlns="http://www.w3.org/2000/svg"
+                                                    fill="none"
+                                                    viewBox="0 0 24 24"
+                                                    stroke="currentColor"
+                                                >
+                                                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                                                </svg>
+                                            </div>
+
+                                            {/* Nested Dropdown for Website Development */}
+                                            <div
+                                                className={`lg:absolute left-0 top-0 w-full lg:w-48 lg:ml-52 bg-white shadow-md rounded-md z-30 ${isWebDevOpen ? 'block' : 'hidden'
+                                                    } ${isMenuOpen ? 'relative lg:left-full ml-4' : ''}`}
+                                            >
+                                                <ul>
+                                                    <li>
+                                                        <Link href="/Website-Development" className="block px-4 py-2 text-sm text-gray-700 hover:bg-[#65258a] hover:text-white">
+                                                            .Net Development
+                                                        </Link>
+                                                    </li>
+                                                    <li>
+                                                        <Link href="/Website-Development" className="block px-4 py-2 text-sm text-gray-700 hover:bg-[#65258a] hover:text-white">
+                                                            PHP Development
+                                                        </Link>
+                                                    </li>
+                                                    <li>
+                                                        <Link href="/Website-Development" className="block px-4 py-2 text-sm text-gray-700 hover:bg-[#65258a] hover:text-white">
+                                                            WordPress Development
+                                                        </Link>
+                                                    </li>
+                                                    <li>
+                                                        <Link href="/Website-Development" className="block px-4 py-2 text-sm text-gray-700 hover:bg-[#65258a] hover:text-white">
+                                                            Cordinate Development
+                                                        </Link>
+                                                    </li>
+                                                </ul>
+                                            </div>
                                         </li>
                                         <li>
-                                            <Link href="/services/app-development" className="block px-4 py-2 text-sm text-gray-700 hover:bg-[#65258a] hover:text-white">
+                                            <div
+                                                className="flex items-center justify-between px-4 py-2 text-sm text-gray-700 hover:bg-[#65258a] hover:text-white cursor-pointer group"
+                                                onClick={(e) => toggleDropdown('appdev', e)}
+                                            >
                                                 App Development
-                                            </Link>
+                                                <svg
+                                                    className={`ml-2 h-4 w-4 transition-transform duration-500 ${isAppDevOpen ? '-rotate-90' : ''}`}
+                                                    xmlns="http://www.w3.org/2000/svg"
+                                                    fill="none"
+                                                    viewBox="0 0 24 24"
+                                                    stroke="currentColor"
+                                                >
+                                                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                                                </svg>
+                                            </div>
+                                            {/* Nested Dropdown for App Development */}
+                                            <div
+                                                className={`lg:absolute left-0 top-0 w-full lg:w-48 bg-white shadow-md lg:mt-8 lg:ml-52 rounded-md z-30 ${isAppDevOpen ? 'block' : 'hidden'
+                                                    } ${isMenuOpen ? 'relative lg:left-full lg:mt-4' : ''}`}
+                                            >
+                                                <ul>
+                                                    <li>
+                                                        <Link href="/App-Development" className="block px-4 py-2 text-sm text-gray-700 hover:bg-[#65258a] hover:text-white">
+                                                            IOS Development
+                                                        </Link>
+                                                    </li>
+                                                    <li>
+                                                        <Link href="/App-Development" className="block px-4 py-2 text-sm text-gray-700 hover:bg-[#65258a] hover:text-white">
+                                                            Android Development
+                                                        </Link>
+                                                    </li>
+                                                </ul>
+                                            </div>
                                         </li>
                                         <li>
-                                            <Link href="/services/digital-marketing" className="block px-4 py-2 text-sm text-gray-700 hover:bg-[#65258a] hover:text-white">
+                                            <div
+                                                className="flex items-center justify-between px-4 py-2 text-sm text-gray-700 hover:bg-[#65258a] hover:text-white cursor-pointer group"
+                                                onClick={(e) => toggleDropdown('digital', e)}
+                                            >
                                                 Digital Marketing
-                                            </Link>
+                                                <svg
+                                                    className={`ml-2 h-4 w-4 transition-transform duration-500 ${isDigitalMarketingOpen ? '-rotate-90' : ''}`}
+                                                    xmlns="http://www.w3.org/2000/svg"
+                                                    fill="none"
+                                                    viewBox="0 0 24 24"
+                                                    stroke="currentColor"
+                                                >
+                                                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                                                </svg>
+                                            </div>
+                                            <div
+                                                className={`lg:absolute left-0 top-0 w-full lg:w-48 lg:ml-52 bg-white shadow-md rounded-md z-30 ${isDigitalMarketingOpen ? 'block' : 'hidden'
+                                                    } ${isMenuOpen ? 'relative lg:left-full ml-4' : ''}`}
+                                            >
+                                                <ul>
+                                                    <li>
+                                                        <Link href="/Digital-Marketing" className="block px-4 py-2 text-sm text-gray-700 hover:bg-[#65258a] hover:text-white">
+                                                            SEO (Search Engine Optimization)
+                                                        </Link>
+                                                    </li>
+                                                    <li>
+                                                        <Link href="/Digital-Marketing" className="block px-4 py-2 text-sm text-gray-700 hover:bg-[#65258a] hover:text-white">
+                                                            SEM (Search Engine Marketing)
+                                                        </Link>
+                                                    </li>
+                                                    <li>
+                                                        <Link href="/Digital-Marketing" className="block px-4 py-2 text-sm text-gray-700 hover:bg-[#65258a] hover:text-white">
+                                                            SMM (Social Media Marketing)
+                                                        </Link>
+                                                    </li>
+                                                    <li>
+                                                        <Link href="/Digital-Marketing" className="block px-4 py-2 text-sm text-gray-700 hover:bg-[#65258a] hover:text-white">
+                                                            SMO (Social Media Optimization)
+                                                        </Link>
+                                                    </li>
+                                                    <li>
+                                                        <Link href="/Digital-Marketing" className="block px-4 py-2 text-sm text-gray-700 hover:bg-[#65258a] hover:text-white">
+                                                            Email Marketing
+                                                        </Link>
+                                                    </li>
+                                                </ul>
+                                            </div>
                                         </li>
                                     </ul>
                                 </div>
@@ -158,12 +316,12 @@ const Navbar: React.FC = () => {
                                 <Link href="/solutions" className="block py-2 px-4 rounded transition-colors duration-300">Our Solutions</Link>
                             </li>
                             <li className="relative group">
-                                <Link href="/contact" className="block py-2 px-4 rounded transition-colors duration-300">Contact Us</Link>
+                                <Link href="/contactus" className="block py-2 px-4 rounded transition-colors duration-300">Contact Us</Link>
                             </li>
                         </ul>
-                        
+
                         {/* Enquiry Now Button for Mobile */}
-                        <Link href="/contact" className="lg:hidden block bg-pink-600 text-white px-4 py-2 rounded hover:bg-pink-700 transition-colors duration-300 my-4 mx-4">
+                        <Link href="/contactus" className="lg:hidden block bg-pink-600 text-white px-4 py-2 rounded hover:bg-pink-700 transition-colors duration-300 my-4 mx-4">
                             Enquiry Now
                         </Link>
                     </div>
