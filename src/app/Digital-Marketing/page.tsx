@@ -63,8 +63,6 @@ const DigitalMarketing = () => {
                     <div className="mt-8 flex flex-wrap gap-x-4 gap-y-2 ml-0 md:ml-8">
                         <button className="bg-gray-200 py-2 px-2 rounded-md hover:bg-[#65258a] hover:text-white whitespace-nowrap">WEB DEVELOPMENT</button>
                         <button className="bg-gray-200 py-2 px-2 rounded-md hover:bg-[#65258a] hover:text-white whitespace-nowrap">APP DEVELOPMENT</button>
-                        <button className="bg-gray-200 py-2 px-2 rounded-md hover:bg-[#65258a] hover:text-white whitespace-nowrap">CCTV CAMERA INSTALLATION</button>
-                        <button className="bg-gray-200 py-2 px-2 rounded-md hover:bg-[#65258a] hover:text-white whitespace-nowrap">COMPUTER LAB INSTALLATION</button>
                         <button className="bg-gray-200 py-2 px-2 rounded-md hover:bg-[#65258a] hover:text-white whitespace-nowrap">DATA ENTRY</button>
                     </div>
                     <hr className="w-full border-gray-300 mt-12" />

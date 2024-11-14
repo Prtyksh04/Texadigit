@@ -1,6 +1,12 @@
 import type { Metadata } from "next";
 import localFont from "next/font/local";
 import "./globals.css";
+import WhatsAppButton from "./components/OtherComponents/WhatsAppButton";
+import Script from "next/script";
+import '@fortawesome/fontawesome-svg-core/styles.css';
+import { config } from '@fortawesome/fontawesome-svg-core';
+config.autoAddCss = false;
+
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
@@ -29,7 +35,12 @@ export default function RootLayout({
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
         {children}
+        <WhatsAppButton />
+        <Script src="https://embed.tawk.to/673205304304e3196ae02701/1icdm8i2k" async />
       </body>
+
     </html>
   );
 }
+
+

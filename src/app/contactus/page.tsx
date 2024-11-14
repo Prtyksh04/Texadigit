@@ -1,7 +1,7 @@
 'use client'
 import React, { useState } from "react";
 import Navbar from "../components/Navbar";
-import { PhoneIcon, MapPinIcon, EnvelopeIcon, ChatBubbleLeftRightIcon } from "@heroicons/react/24/outline";
+import { PhoneIcon,EnvelopeIcon, ChatBubbleLeftRightIcon } from "@heroicons/react/24/outline";
 import { FaArrowRight } from 'react-icons/fa';
 import Footer from "../components/Footer";
 import AboutUsHeader from "../components/OtherComponents/Header";
@@ -21,9 +21,9 @@ const EnquiryNow = () => {
 
     const sendEmail = (e: React.FormEvent<HTMLFormElement>) => {
         e.preventDefault(); // Prevent the default form submission
-        const serviceId = "service_ztyv7np"; 
-        const templateId = "template_p92r7oh";
-        const publicKey = "Xqrhiit8dKelSSaMk"; 
+        const serviceId = "service_7s3n44a";
+        const templateId = "template_3q2fy4j";
+        const publicKey = "kE-qLvqR-u99g2EwF";
 
         // Prepare template params
         const templateParams = {
@@ -55,20 +55,13 @@ const EnquiryNow = () => {
         {
             icon: <PhoneIcon className="h-10 w-10" />,
             title: "Call Us",
-            details: ["+91-9871610154", "+91-7073050836", "+91-8619986762"],
+            details: ["+91-9871610154", "+91-7988695795", "+91-9711679777"],
         },
-        {
-            icon: <MapPinIcon className="h-10 w-10" />,
-            title: "Visit Us",
-            details: [
-                "89-Shivram Colony, Mayapuri",
-                "Jagatpura Jaipur (Raj)-302017",
-            ],
-        },
+        
         {
             icon: <EnvelopeIcon className="h-10 w-10" />,
             title: "Mail Us",
-            details: ["texadigitinfo@gmail.com", "ramjangid@texadigit.in"],
+            details: ["office@imaginedigi.com",],
         },
         {
             icon: <ChatBubbleLeftRightIcon className="h-10 w-10" />,
@@ -85,7 +78,7 @@ const EnquiryNow = () => {
                 breadcrumbText="Contact Now"
             />
             <div className="flex flex-col items-center justify-center min-h-screen bg-gray-50 py-12">
-                <div className="grid grid-cols-1 md:grid-cols-4 gap-8 w-full max-w-6xl px-6">
+                <div className="grid grid-cols-1 md:grid-cols-3 gap-8 w-full max-w-6xl px-6">
                     {contactDetails.map((contact, index) => (
                         <div
                             key={index}
@@ -120,6 +113,7 @@ const EnquiryNow = () => {
                             value={formData.name}
                             onChange={handleChange}
                             placeholder="Enter name"
+                            required
                             className="w-full px-4 py-3 border rounded-lg focus:outline-none focus:border-pink-500"
                         />
                         <input
@@ -128,6 +122,7 @@ const EnquiryNow = () => {
                             value={formData.email}
                             onChange={handleChange}
                             placeholder="Enter email"
+                            required
                             className="w-full px-4 py-3 border rounded-lg focus:outline-none focus:border-pink-500"
                         />
                         <input
@@ -136,6 +131,7 @@ const EnquiryNow = () => {
                             value={formData.mobile}
                             onChange={handleChange}
                             placeholder="Enter Mobile"
+                            required
                             className="w-full px-4 py-3 border rounded-lg focus:outline-none focus:border-pink-500"
                         />
                         <textarea
@@ -143,6 +139,7 @@ const EnquiryNow = () => {
                             value={formData.message}
                             onChange={handleChange}
                             placeholder="Message"
+                            required
                             className="w-full px-4 py-3 border rounded-lg focus:outline-none focus:border-pink-500"
                             rows={4}
                         ></textarea>
@@ -170,14 +167,11 @@ const EnquiryNow = () => {
                     <hr className="w-5/6 text-center ml-6" />
                     <div>
                         <h3 className="text-xl font-semibold">Our Headquarters</h3>
-                        <p className="text-gray-400 mt-2 font-normal mb-8">
-                            Address: 89-Shivram Colony, Mayapuri, Jagatpura Jaipur (Rajasthan) - 302017
-                        </p>
                         <p className="text-gray-400 mt-1 font-normal mb-2">
-                            Phone: +91-7073050836, +91-9871610154, +91-8619986762
+                            Phone: +91-7988695795, +91-9871610154, +91-9711679777
                         </p>
                         <p className="text-gray-400 mt-1 font-normal">
-                            Email: texadigitinfo@gmail.com
+                            Email: office@imaginedigi.com
                         </p>
                     </div>
                 </div>

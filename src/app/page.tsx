@@ -10,6 +10,8 @@ import BlogSection from "./components/BlogSection";
 import Testimonials from "./components/Testimonials";
 import ClientSection from "./components/ClientSection";
 import Footer from "./components/Footer";
+
+
 export default function Home() {
   return (
     <>

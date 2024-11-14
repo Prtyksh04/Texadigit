@@ -1,9 +1,49 @@
-'use client'
+'use client';
 import Image from 'next/image';
-import React from 'react';
+import React, { useState } from 'react';
 import { FaPaperPlane } from 'react-icons/fa';
+import emailjs from '@emailjs/browser';
 
 const CallToActionSection: React.FC = () => {
+  const [formData, setFormData] = useState({
+    name: "",
+    mobile: ""
+  });
+
+  const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+    const { name, value } = e.target;
+    setFormData((prevData) => ({
+      ...prevData,
+      [name]: value,
+    }));
+  };
+
+  const sendEmail = (e: React.FormEvent<HTMLFormElement>) => {
+    e.preventDefault();
+    const serviceId = "service_7s3n44a";
+    const templateId = "template_3q2fy4j";
+    const publicKey = "kE-qLvqR-u99g2EwF";
+
+    const templateParams = {
+      from_name: formData.name,
+      from_mobile: formData.mobile,
+    };
+
+    emailjs
+      .send(serviceId, templateId, templateParams, publicKey)
+      .then((response) => {
+        console.log("Email sent successfully!", response);
+        // Clear form after successful submission
+        setFormData({
+          name: "",
+          mobile: "",
+        });
+      })
+      .catch((error) => {
+        console.error("Error sending email:", error);
+      });
+  };
+
   return (
     <section
       id="callActionBG"
@@ -37,12 +77,15 @@ const CallToActionSection: React.FC = () => {
         </div>
 
         {/* Form */}
-        <form className="flex flex-col lg:flex-row justify-center items-center text-center w-full max-w-4xl relative" method="post">
+        <form className="flex flex-col lg:flex-row justify-center items-center text-center w-full max-w-4xl relative" onSubmit={sendEmail}>
           {/* Name Input */}
           <div className="w-full lg:w-1/3 px-2 mb-4 z-10">
             <div className="form-group">
               <input
                 type="text"
+                name="name"
+                value={formData.name}
+                onChange={handleChange}
                 className="form-control w-full px-4 py-2 border border-gray-300 rounded-lg outline-none"
                 placeholder="Type Your Name"
                 required
@@ -55,6 +98,9 @@ const CallToActionSection: React.FC = () => {
             <div className="form-group">
               <input
                 type="text"
+                name="mobile"
+                value={formData.mobile}
+                onChange={handleChange}
                 className="form-control w-full px-4 py-2 border border-gray-300 rounded-lg outline-none"
                 placeholder="Your Mobile"
                 pattern="^((\\+91-?)|0)?[0-9]{10}$"

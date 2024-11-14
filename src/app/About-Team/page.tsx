@@ -154,15 +154,12 @@ const AboutTeam = () => {
                     </div>
                     <hr className="w-5/6 text-center ml-6" />
                     <div>
-                        <h3 className="text-xl font-semibold">Our Headquarters</h3>
-                        <p className="text-gray-400 mt-2 font-normal mb-8">
-                            Address: 89-Shivram Colony, Mayapuri, Jagatpura Jaipur (Rajasthan) - 302017
-                        </p>
+                        <h3 className="text-xl font-semibold">Contact us</h3>
                         <p className="text-gray-400 mt-1 font-normal mb-2">
                             Phone: +91-7073050836, +91-9871610154, +91-8619986762
                         </p>
                         <p className="text-gray-400 mt-1 font-normal">
-                            Email: texadigitinfo@gmail.com
+                            Email: office@imaginedigi.com
                         </p>
                     </div>
                 </div>

@@ -16,14 +16,6 @@ const CategoriesSection = () => {
       href: "/services/digital-marketing"
     },
     {
-      name: "CCTV Camera Installation",
-      href: "/services/cctv-installation"
-    },
-    {
-      name: "Computer Lab Installation",
-      href: "/services/lab-installation"
-    },
-    {
       name: "Data Entry Work",
       href: "/services/data-entry"
     }

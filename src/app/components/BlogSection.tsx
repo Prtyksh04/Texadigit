@@ -42,7 +42,7 @@ const BlogSection: React.FC = () => {
                     <span className="animate-border mx-auto mb-4"></span>
                 </div>
 
-                <div className="flex flex-wrap justify-center gap-4">
+                <div className="flex flex-wrap justify-center gap-16">
                     {/* Blog Card 1 */}
                     <div className="w-full sm:w-1/2 md:w-1/4 h-full mb-6 shadow-lg bg-white rounded-lg overflow-hidden transition-transform transform hover:scale-105 duration-300">
                         <div className="relative">
@@ -79,27 +79,6 @@ const BlogSection: React.FC = () => {
                             </h3>
                             <p className="text-[#707070] mb-4 flex-grow">We provide the best Mobile App Development Services in iOS &amp; Android for all versions.</p>
                             <Link href="/mobile-app-development" className="text-xs mt-2 flex items-center hover:text-[#e80566] text-black duration-300">
-                                Read More
-                                <FaArrowRight className="ml-1 text-xs" />
-                            </Link>
-                        </div>
-                    </div>
-
-                    {/* Blog Card 3 */}
-                    <div className="w-full sm:w-1/2 md:w-1/4 h-full mb-6 shadow-lg bg-white rounded-lg overflow-hidden transition-transform transform hover:scale-105 duration-300">
-                        <div className="relative">
-                            <Image src="/images/cctvComputerMainindex.png" className="card-img-top h-48 w-full object-cover" alt="CCTV Camera Installation" width={200} height={200}/>
-                            <div className="meta-date text-yellow-500 text-3xl absolute top-2 left-2">
-                                <i className="fa fa-star" aria-hidden="true"></i>
-                            </div>
-                        </div>
-                        <hr className='border-2 border-[#e80566]' />
-                        <div className="card-body p-4 h-full flex flex-col">
-                            <h3 className="h5 mb-2 card-title flex-grow">
-                                <Link href="/cctv-camera-installation-service" className="text-black text-lg font-semibold hover:text-[#e80566]">Computer Lab &amp; CCTV Camera Installation</Link>
-                            </h3>
-                            <p className="text-[#707070] mb-4 flex-grow">We provide the best Computer &amp; CCTV Camera Installation Services.</p>
-                            <Link href="/computer-networking-lab-installation-service" className="text-black text-xs mt-2 flex items-center hover:text-[#e80566] duration-300">
                                 Read More
                                 <FaArrowRight className="ml-1 text-xs" />
                             </Link>

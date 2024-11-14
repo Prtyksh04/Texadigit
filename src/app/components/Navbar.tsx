@@ -67,10 +67,10 @@ const Navbar: React.FC = () => {
             }
         } else if (dropdown === 'digital') {
             setIsDigitalMarketingOpen(!isDigitalMarketingOpen);
-            if(isWebDevOpen){
+            if (isWebDevOpen) {
                 setIsWebDevOpen(false);
             }
-            if(isAppDevOpen){
+            if (isAppDevOpen) {
                 setIsAppDevOpen(false);
             }
         }
@@ -78,21 +78,16 @@ const Navbar: React.FC = () => {
 
     return (
         <header className="header">
-            <nav className="navbar fixed top-0 w-full bg-gradient-to-r from-[#432E54] to-[#AE445A] text-white shadow-lg z-50 backdrop-blur-lg">
+            <nav className="navbar fixed top-0 w-full bg-gradient-to-r from-[#65258a] to-[#e60667] text-white shadow-lg z-50 backdrop-blur-lg">
                 <div className="container mx-auto flex items-center justify-between px-4 py-2">
                     <Link href="/" className="text-lg font-bold text-white">
-                        <Image src="/images/png/Colorlogowithbackground.png"
+                        <Image src="/images/png/Colorlogo-nobackground.png"
                             alt='logo'
                             className='cursor-pointer'
                             width={80}
                             height={16}
                         />
-                        {/* <Image src="/images/logo-color.jpg"
-                            alt='logo'
-                            className='cursor-pointer'
-                            width={125}
-                            height={45}
-                        /> */}
+
                     </Link>
 
                     {/* Mobile Menu Button */}
@@ -173,6 +168,55 @@ const Navbar: React.FC = () => {
                                         }`}
                                 >
                                     <ul>
+                                        <li>
+                                            <div
+                                                className="flex items-center justify-between px-4 py-2 text-sm text-gray-700 hover:bg-[#65258a] hover:text-white cursor-pointer group"
+                                                onClick={(e) => toggleDropdown('digital', e)}
+                                            >
+                                                Digital Marketing
+                                                <svg
+                                                    className={`ml-2 h-4 w-4 transition-transform duration-500 ${isDigitalMarketingOpen ? '-rotate-90' : ''}`}
+                                                    xmlns="http://www.w3.org/2000/svg"
+                                                    fill="none"
+                                                    viewBox="0 0 24 24"
+                                                    stroke="currentColor"
+                                                >
+                                                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                                                </svg>
+                                            </div>
+                                            <div
+                                                className={`lg:absolute left-0 top-0 w-full lg:w-48 lg:ml-52 bg-white shadow-md rounded-md z-30 ${isDigitalMarketingOpen ? 'block' : 'hidden'
+                                                    } ${isMenuOpen ? 'relative lg:left-full ml-4' : ''}`}
+                                            >
+                                                <ul>
+                                                    <li>
+                                                        <Link href="/Digital-Marketing" className="block px-4 py-2 text-sm text-gray-700 hover:bg-[#65258a] hover:text-white">
+                                                            SEO (Search Engine Optimization)
+                                                        </Link>
+                                                    </li>
+                                                    <li>
+                                                        <Link href="/Digital-Marketing" className="block px-4 py-2 text-sm text-gray-700 hover:bg-[#65258a] hover:text-white">
+                                                            SEM (Search Engine Marketing)
+                                                        </Link>
+                                                    </li>
+                                                    <li>
+                                                        <Link href="/Digital-Marketing" className="block px-4 py-2 text-sm text-gray-700 hover:bg-[#65258a] hover:text-white">
+                                                            SMM (Social Media Marketing)
+                                                        </Link>
+                                                    </li>
+                                                    <li>
+                                                        <Link href="/Digital-Marketing" className="block px-4 py-2 text-sm text-gray-700 hover:bg-[#65258a] hover:text-white">
+                                                            SMO (Social Media Optimization)
+                                                        </Link>
+                                                    </li>
+                                                    <li>
+                                                        <Link href="/Digital-Marketing" className="block px-4 py-2 text-sm text-gray-700 hover:bg-[#65258a] hover:text-white">
+                                                            Email Marketing
+                                                        </Link>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </li>
                                         {/* Website Development with nested dropdown */}
                                         <li className="relative">
                                             <div
@@ -256,64 +300,23 @@ const Navbar: React.FC = () => {
                                             </div>
                                         </li>
                                         <li>
-                                            <div
+                                            <Link
+                                                href={"/Data-Entry"}
                                                 className="flex items-center justify-between px-4 py-2 text-sm text-gray-700 hover:bg-[#65258a] hover:text-white cursor-pointer group"
-                                                onClick={(e) => toggleDropdown('digital', e)}
                                             >
-                                                Digital Marketing
-                                                <svg
-                                                    className={`ml-2 h-4 w-4 transition-transform duration-500 ${isDigitalMarketingOpen ? '-rotate-90' : ''}`}
-                                                    xmlns="http://www.w3.org/2000/svg"
-                                                    fill="none"
-                                                    viewBox="0 0 24 24"
-                                                    stroke="currentColor"
-                                                >
-                                                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
-                                                </svg>
-                                            </div>
-                                            <div
-                                                className={`lg:absolute left-0 top-0 w-full lg:w-48 lg:ml-52 bg-white shadow-md rounded-md z-30 ${isDigitalMarketingOpen ? 'block' : 'hidden'
-                                                    } ${isMenuOpen ? 'relative lg:left-full ml-4' : ''}`}
-                                            >
-                                                <ul>
-                                                    <li>
-                                                        <Link href="/Digital-Marketing" className="block px-4 py-2 text-sm text-gray-700 hover:bg-[#65258a] hover:text-white">
-                                                            SEO (Search Engine Optimization)
-                                                        </Link>
-                                                    </li>
-                                                    <li>
-                                                        <Link href="/Digital-Marketing" className="block px-4 py-2 text-sm text-gray-700 hover:bg-[#65258a] hover:text-white">
-                                                            SEM (Search Engine Marketing)
-                                                        </Link>
-                                                    </li>
-                                                    <li>
-                                                        <Link href="/Digital-Marketing" className="block px-4 py-2 text-sm text-gray-700 hover:bg-[#65258a] hover:text-white">
-                                                            SMM (Social Media Marketing)
-                                                        </Link>
-                                                    </li>
-                                                    <li>
-                                                        <Link href="/Digital-Marketing" className="block px-4 py-2 text-sm text-gray-700 hover:bg-[#65258a] hover:text-white">
-                                                            SMO (Social Media Optimization)
-                                                        </Link>
-                                                    </li>
-                                                    <li>
-                                                        <Link href="/Digital-Marketing" className="block px-4 py-2 text-sm text-gray-700 hover:bg-[#65258a] hover:text-white">
-                                                            Email Marketing
-                                                        </Link>
-                                                    </li>
-                                                </ul>
-                                            </div>
+                                                Data Entry
+                                            </Link>
                                         </li>
                                     </ul>
                                 </div>
                             </li>
 
                             {/* Other Links */}
-                            <li className="relative group">
+                            {/* <li className="relative group">
                                 <Link href="/projects" className="block py-2 px-4 rounded transition-colors duration-300">Projects</Link>
-                            </li>
+                            </li> */}
                             <li className="relative group">
-                                <Link href="/solutions" className="block py-2 px-4 rounded transition-colors duration-300">Our Solutions</Link>
+                                <Link href="OurSolution" className="block py-2 px-4 rounded transition-colors duration-300">Our Solutions</Link>
                             </li>
                             <li className="relative group">
                                 <Link href="/contactus" className="block py-2 px-4 rounded transition-colors duration-300">Contact Us</Link>
@@ -327,7 +330,7 @@ const Navbar: React.FC = () => {
                     </div>
 
                     {/* CTA Button for Large Screens */}
-                    <Link href="/contact" className="hidden lg:inline-block bg-pink-600 text-white px-4 py-2 rounded hover:bg-pink-700 transition-colors duration-300">
+                    <Link href="/contactus" className="hidden lg:inline-block bg-white text-[#65258a] px-4 py-2 rounded hover:bg-pink-200  transition-colors duration-300">
                         Enquiry Now
                     </Link>
                 </div>

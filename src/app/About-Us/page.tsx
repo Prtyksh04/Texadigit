@@ -8,7 +8,7 @@ import Navbar from "../components/Navbar";
 const AboutUs = () => {
     return (
         <>
-        <Navbar />
+            <Navbar />
             <AboutUsHeader
                 title="About Us"
                 breadcrumbText="About Us"
@@ -55,7 +55,7 @@ const AboutUs = () => {
                 {/* Right: Content */}
                 <div className="flex-1 md:ml-8 mt-12">
                     <p className="text-gray-600 mt-4 text-xl">
-                        t is an IT arrangement and fix organization. Our administrations extend from Web Development including Website Development, Web/Graphic Design, Web Hosting/Domain Registration, Website Maintenance/Lead Tracking, E-Commerce Web Solutions, Content Management, Open Source Customization to Digital Marketing like program Optimization, Social Media Marketing , program Marketing close by giving discussion to its customers on Business Process, Marketing . some of the supporting administrations gave additionally incorporate upkeep and backing of the online entrance.
+                        <strong className="text-gray-600">Imagine Digi</strong> is an IT arrangement and fix organization. Our administrations extend from Web Development including Website Development, Web/Graphic Design, Web Hosting/Domain Registration, Website Maintenance/Lead Tracking, E-Commerce Web Solutions, Content Management, Open Source Customization to Digital Marketing like program Optimization, Social Media Marketing , program Marketing close by giving discussion to its customers on Business Process, Marketing . some of the supporting administrations gave additionally incorporate upkeep and backing of the online entrance.
                     </p>
                     <p className="text-gray-600 mt-4 text-xl">
                         Advances like HTML5, CSS3, PHP, Asp.Net, JavaScript, Java, jQuery, WordPress, Joomla, MySQL and so on and mastery in Photoshop, InDesign, Graphic plans and so on. the business offers a vigorous recommendation improvement .
