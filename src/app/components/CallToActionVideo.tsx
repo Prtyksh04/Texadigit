@@ -54,7 +54,7 @@ const CallToActionVideo: React.FC = () => {
                         <p className="text-base md:text-lg mb-6 text-justify">
                             Imagine Digi is the best IT Service Provider. Imagine Digi is offering the best Digital Marketing services, including SEO, Paid Search, Social Media, Consulting, Lead Generation, Brand Reputation Management, and Web Development Services.
                         </p>
-                        <Link href="tel:7733844020" legacyBehavior>
+                        <Link href="tel:9871610154" legacyBehavior>
                             <a className="bg-[#6a027c] hover:bg-[#e80566] hover:border-[#6a027c] border-2 border-[#6a027c] text-white font-semibold py-2 px-4 md:py-3 md:px-6 rounded-md inline-block transition duration-300">
                                 Call Now
                             </a>
