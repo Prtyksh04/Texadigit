@@ -5,19 +5,19 @@ const CategoriesSection = () => {
   const categories = [
     {
       name: "Website Development",
-      href: "/services/website-development"
+      href: "/Website-Development"
     },
     {
       name: "App Development",
-      href: "/services/app-development"
+      href: "/App-Development"
     },
     {
       name: "Digital Marketing",
-      href: "/services/digital-marketing"
+      href: "/Digital-Marketing"
     },
     {
       name: "Data Entry Work",
-      href: "/services/data-entry"
+      href: "/Data-Entry"
     }
   ];
 

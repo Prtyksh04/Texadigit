@@ -43,7 +43,7 @@ const HeroSection: React.FC = () => {
                             </div>
                         </div>
                         {/* <div className="lg:w-7/12 w-full flex justify-end mt-16 pr-16"> */}
-                        <div className="lg:w-7/12 w-full flex justify-center lg:justify-end pr-0  lg:mt-16 -mt-20 z-[-1]">
+                        <div className="lg:w-7/12 w-full flex justify-center lg:justify-end pr-0 lg:pr-16 lg:mt-16 -mt-20 z-[-1]">
                             <Image
                                 src="/images/t3-hero-img.svg"
                                 alt="hero"
