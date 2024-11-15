@@ -17,7 +17,7 @@ const WebsiteDevelopment = () => {
                 <meta name="robots" content="index, follow" />
                 <meta property="og:title" content="Website Development Services | Imagine Digi" />
                 <meta property="og:description" content="Professional website development services to enhance your online presence. Get high-quality, responsive, and user-friendly websites tailored to your business needs." />
-                <meta property="og:url" content="https://www.imaginedigi.com/website-development" />
+                <meta property="og:url" content="https://www.imaginedigi.com/Website-Development" />
                 <meta property="og:image" content="https://www.imaginedigi.com/images/Web_Development.jpeg" />
                 <meta name="twitter:title" content="Website Development Services | Imagine Digi" />
                 <meta name="twitter:description" content="Professional website development services to enhance your online presence. Get high-quality, responsive, and user-friendly websites tailored to your business needs." />

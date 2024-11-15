@@ -133,12 +133,12 @@ const Navbar: React.FC = () => {
                                 >
                                     <ul>
                                         <li>
-                                            <Link href="/about-us" className="block px-4 py-2 text-sm text-gray-700 hover:bg-[#65258a] hover:text-white transition-colors">
+                                            <Link href="/About-Us" className="block px-4 py-2 text-sm text-gray-700 hover:bg-[#65258a] hover:text-white transition-colors">
                                                 About Us
                                             </Link>
                                         </li>
                                         <li>
-                                            <Link href="/about-team" className="block px-4 py-2 text-sm text-gray-700 hover:bg-[#65258a] hover:text-white transition-colors">
+                                            <Link href="/About-Team" className="block px-4 py-2 text-sm text-gray-700 hover:bg-[#65258a] hover:text-white transition-colors">
                                                 About Team
                                             </Link>
                                         </li>
@@ -190,27 +190,27 @@ const Navbar: React.FC = () => {
                                             >
                                                 <ul>
                                                     <li>
-                                                        <Link href="/digital-marketing" className="block px-4 py-2 text-sm text-gray-700 hover:bg-[#65258a] hover:text-white">
+                                                        <Link href="/Digital-Marketing" className="block px-4 py-2 text-sm text-gray-700 hover:bg-[#65258a] hover:text-white">
                                                             SEO (Search Engine Optimization)
                                                         </Link>
                                                     </li>
                                                     <li>
-                                                        <Link href="/digital-marketing" className="block px-4 py-2 text-sm text-gray-700 hover:bg-[#65258a] hover:text-white">
+                                                        <Link href="/Digital-Marketing" className="block px-4 py-2 text-sm text-gray-700 hover:bg-[#65258a] hover:text-white">
                                                             SEM (Search Engine Marketing)
                                                         </Link>
                                                     </li>
                                                     <li>
-                                                        <Link href="/digital-marketing" className="block px-4 py-2 text-sm text-gray-700 hover:bg-[#65258a] hover:text-white">
+                                                        <Link href="/Digital-Marketing" className="block px-4 py-2 text-sm text-gray-700 hover:bg-[#65258a] hover:text-white">
                                                             SMM (Social Media Marketing)
                                                         </Link>
                                                     </li>
                                                     <li>
-                                                        <Link href="/digital-marketing" className="block px-4 py-2 text-sm text-gray-700 hover:bg-[#65258a] hover:text-white">
+                                                        <Link href="/Digital-Marketing" className="block px-4 py-2 text-sm text-gray-700 hover:bg-[#65258a] hover:text-white">
                                                             SMO (Social Media Optimization)
                                                         </Link>
                                                     </li>
                                                     <li>
-                                                        <Link href="/digital-marketing" className="block px-4 py-2 text-sm text-gray-700 hover:bg-[#65258a] hover:text-white">
+                                                        <Link href="/Digital-Marketing" className="block px-4 py-2 text-sm text-gray-700 hover:bg-[#65258a] hover:text-white">
                                                             Email Marketing
                                                         </Link>
                                                     </li>
@@ -242,22 +242,22 @@ const Navbar: React.FC = () => {
                                             >
                                                 <ul>
                                                     <li>
-                                                        <Link href="/website-development" className="block px-4 py-2 text-sm text-gray-700 hover:bg-[#65258a] hover:text-white">
+                                                        <Link href="/Website-Development" className="block px-4 py-2 text-sm text-gray-700 hover:bg-[#65258a] hover:text-white">
                                                             .Net Development
                                                         </Link>
                                                     </li>
                                                     <li>
-                                                        <Link href="/website-development" className="block px-4 py-2 text-sm text-gray-700 hover:bg-[#65258a] hover:text-white">
+                                                        <Link href="/Website-Development" className="block px-4 py-2 text-sm text-gray-700 hover:bg-[#65258a] hover:text-white">
                                                             PHP Development
                                                         </Link>
                                                     </li>
                                                     <li>
-                                                        <Link href="/website-development" className="block px-4 py-2 text-sm text-gray-700 hover:bg-[#65258a] hover:text-white">
+                                                        <Link href="/Website-Development" className="block px-4 py-2 text-sm text-gray-700 hover:bg-[#65258a] hover:text-white">
                                                             WordPress Development
                                                         </Link>
                                                     </li>
                                                     <li>
-                                                        <Link href="/website-development" className="block px-4 py-2 text-sm text-gray-700 hover:bg-[#65258a] hover:text-white">
+                                                        <Link href="/Website-Development" className="block px-4 py-2 text-sm text-gray-700 hover:bg-[#65258a] hover:text-white">
                                                             Cordinate Development
                                                         </Link>
                                                     </li>
@@ -287,12 +287,12 @@ const Navbar: React.FC = () => {
                                             >
                                                 <ul>
                                                     <li>
-                                                        <Link href="/app-development" className="block px-4 py-2 text-sm text-gray-700 hover:bg-[#65258a] hover:text-white">
+                                                        <Link href="/App-Development" className="block px-4 py-2 text-sm text-gray-700 hover:bg-[#65258a] hover:text-white">
                                                             IOS Development
                                                         </Link>
                                                     </li>
                                                     <li>
-                                                        <Link href="/app-development" className="block px-4 py-2 text-sm text-gray-700 hover:bg-[#65258a] hover:text-white">
+                                                        <Link href="/App-Development" className="block px-4 py-2 text-sm text-gray-700 hover:bg-[#65258a] hover:text-white">
                                                             Android Development
                                                         </Link>
                                                     </li>
@@ -301,7 +301,7 @@ const Navbar: React.FC = () => {
                                         </li>
                                         <li>
                                             <Link
-                                                href={"/data-entry"}
+                                                href={"/Data-Entry"}
                                                 className="flex items-center justify-between px-4 py-2 text-sm text-gray-700 hover:bg-[#65258a] hover:text-white cursor-pointer group"
                                             >
                                                 Data Entry
@@ -316,7 +316,7 @@ const Navbar: React.FC = () => {
                                 <Link href="/projects" className="block py-2 px-4 rounded transition-colors duration-300">Projects</Link>
                             </li> */}
                             <li className="relative group">
-                                <Link href="/oursolution    " className="block py-2 px-4 rounded transition-colors duration-300">Our Solutions</Link>
+                                <Link href="/OurSolution" className="block py-2 px-4 rounded transition-colors duration-300">Our Solutions</Link>
                             </li>
                             <li className="relative group">
                                 <Link href="/contactus" className="block py-2 px-4 rounded transition-colors duration-300">Contact Us</Link>
