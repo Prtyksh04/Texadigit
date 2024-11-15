@@ -2,14 +2,14 @@
 
 import React from 'react';
 import Image from 'next/image';
-import { Facebook, Linkedin} from 'lucide-react';
+import { Facebook, Linkedin } from 'lucide-react';
 
 
 const Footer: React.FC = () => {
   return (
     <footer className="footer-section">
       {/* Footer Top */}
-      <div className="footer-top bg-gradient-to-r from-[#65258a] to-[#e60667] px-4 md:px-8">
+      <div className="footer-top bg-gradient-to-r from-[#d90569] to-[#9B7EBD] px-4 md:px-8">
         <div className="container mx-auto">
           <div className="flex flex-col md:flex-row">
             {/* Left Section */}

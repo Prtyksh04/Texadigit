@@ -54,6 +54,13 @@ const AboutTeam = () => {
                 console.error("Error sending email:", error);
             });
     };
+
+    const openGoogleMaps = () => {
+        const googleMapsUrl = `https://www.google.com/maps/search/?api=1&query=Sector+18,Gurugram,Haryana,122022`;
+        window.open(googleMapsUrl, '_blank');
+    };
+
+
     return (
         <>
             <style>
@@ -147,7 +154,9 @@ const AboutTeam = () => {
                         <p className="text-gray-600 mt-4">
                             Seamlessly deliver pandemic e-services and next-generation initiatives.
                         </p>
-                        <button className="mt-6 inline-flex items-center px-4 py-2 border border-purple-500 text-purple-600 rounded-lg hover:bg-purple-100 text-center my-2">
+                        <button className="mt-6 inline-flex items-center px-4 py-2 border border-purple-500 text-purple-600 rounded-lg hover:bg-purple-100 text-center my-2"
+                            onClick={openGoogleMaps}
+                        >
                             Get Directions
                             <FaArrowRight className="ml-2 mt-1 text-xs text-black" />
                         </button>

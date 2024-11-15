@@ -1,5 +1,5 @@
 import React from 'react';
-import { Facebook, Linkedin, Globe } from 'lucide-react';
+import { Facebook, Linkedin } from 'lucide-react';
 import Image from 'next/image';
 interface TeamMemberProps {
   name: string;
@@ -40,9 +40,6 @@ const TeamMember: React.FC<TeamMemberProps> = ({ name, title, quote, imageUrl , 
           </a>
           <a href={Linkedinurl} className="text-gray-600 hover:text-blue-600">
             <Linkedin size={20} />
-          </a>
-          <a href="#" className="text-gray-600 hover:text-blue-600">
-            <Globe size={20} />
           </a>
         </div>
       </div>

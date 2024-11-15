@@ -34,6 +34,9 @@ export const metadata: Metadata = {
       },
     ],
   },
+  icons :{
+    icon:"/icon.ico"
+  }
 
 };
 export default function RootLayout({

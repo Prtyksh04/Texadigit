@@ -13,7 +13,7 @@ export function MagicCardDemo() {
                 gradientColor={"#ffdce5"}
             >
                 <div className="mb-4 flex flex-col items-center">
-                    <GiSpeaker className="text-[#AE445A] mb-2 text-4xl md:text-6xl" />
+                    <GiSpeaker className="text-[#c7056b] mb-2 text-4xl md:text-6xl" />
                     <h1 className="text-lg font-semibold mb-2 text-base md:text-lg">Digital Marketing</h1>
                     <p className="text-sm text-gray-700 text-base md:text-sm">Boost brand awareness and reach <br /> your customers on a human level.</p>
                     <Link href="#" className="text-xs mt-2 flex items-center hover:scale-110 duration-300">
@@ -35,7 +35,7 @@ export function MagicCardDemo() {
                 gradientColor={"#ffdce5"}
             >
                 <div className="mb-4 flex flex-col items-center">
-                    <FaLaptopCode className="text-[#AE445A] mb-2 text-4xl md:text-6xl" />
+                    <FaLaptopCode className="text-[#c7056b] mb-2 text-4xl md:text-6xl" />
                     <h1 className="text-lg font-semibold mb-2 text-base md:text-lg">Website Development</h1>
                     <p className="text-sm text-gray-700 text-base md:text-sm">Our designers and developers will<br />create an attractive, SEO-friendly</p>
                     <Link href="#" className="text-xs mt-2 flex items-center hover:scale-110 duration-300">
@@ -54,10 +54,10 @@ export function MagicCardDemo() {
 
             <MagicCard
                 className="relative cursor-pointer flex-col items-center justify-center shadow-xl whitespace-nowrap text-center text-4xl"
-                gradientColor={"#C9E6F0"}
+                gradientColor={"#ffdce5"}
             >
                 <div className="mb-4 flex flex-col items-center">
-                    <GiSmartphone className="text-[#AE445A] mb-2 text-4xl md:text-6xl" />
+                    <GiSmartphone className="text-[#c7056b] mb-2 text-4xl md:text-6xl" />
                     <h1 className="text-lg font-semibold mb-2 text-base md:text-lg">App Development</h1>
                     <p className="text-sm text-gray-700 text-base md:text-sm">Progressively empower business<br />&quot;outside the box!&quot;thinking with</p>
                     <Link href="#" className="text-xs mt-2 flex items-center hover:scale-110 duration-300">

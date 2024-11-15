@@ -27,18 +27,12 @@ const HeroSection: React.FC = () => {
                     <div className="flex flex-col lg:flex-row items-center">
                         <div className="lg:w-5/12 w-full mb-8 lg:mb-0">
                             <div className="text-white pt-4 lg:pl-32 flex flex-col items-center lg:block lg:text-white text-center lg:text-justify">
-                                <span className="block text-lg mt-16">IT Services Provider</span>
+                                <span className="block md:text-lg mt-16 text-md">IT Services Provider</span>
                                 <HyperTextDemo />
-                                <p className="lead text-xl  font-normal mt-2">
+                                <p className="lead md:text-xl  font-normal mt-2 text-md">
                                     Get your attractive website at the lowest cost and show your website on the first page of Google, attracting thousands of your customers.
                                 </p>
                                 <div className="action-btns lg:mt-6 mr-2 mt-8">
-                                    {/* <Link
-                                        href="/contactus"
-                                        className="btn secondary-solid-btn bg-[#AF1740] px-4 py-2  rounded-md shadow-lg hover:bg-pink-700 transition-colors duration-300"
-                                    >
-                                        Get Started Now
-                                    </Link> */}
                                     <PulsatingButtonDemo />
                                 </div>
                             </div>
