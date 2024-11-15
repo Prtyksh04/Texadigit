@@ -21,7 +21,7 @@ const geistMono = localFont({
 
 export const metadata: Metadata = {
   title: "Imagine Digi",
-  description: "Web Development Company | App Development Company",
+  description: "Website Development Company | App Development Company | Digital Marketing Company | Data Entry Company",
 };
 
 export default function RootLayout({

@@ -156,7 +156,7 @@ const AboutTeam = () => {
                     <div>
                         <h3 className="text-xl font-semibold">Contact us</h3>
                         <p className="text-gray-400 mt-1 font-normal mb-2">
-                            Phone: +91-7073050836, +91-9871610154, +91-8619986762
+                            Phone: +91-9871610154,+91-7988695795, +91-9711679777
                         </p>
                         <p className="text-gray-400 mt-1 font-normal">
                             Email: office@imaginedigi.com

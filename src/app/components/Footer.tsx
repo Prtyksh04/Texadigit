@@ -50,13 +50,13 @@ const Footer: React.FC = () => {
                     <h4 className="text-white">COMPANY</h4>
                     <ul className="nav flex flex-col gap-y-2 py-4">
                       <li className="nav-item">
-                        <a className="nav-link" href="/About-Us">About Imagine Digi</a>
+                        <a className="nav-link" href="/about-us">About Imagine Digi</a>
                       </li>
                       <li className="nav-item">
-                        <a className="nav-link" href="/all-projects">Our Latest Projects</a>
+                        <a className="nav-link" href={"#"}>Our Latest Projects</a>
                       </li>
                       <li className="nav-item">
-                        <a className="nav-link" href="/all-services">About Our Services</a>
+                        <a className="nav-link" href={"#"}>About Our Services</a>
                       </li>
                       <li className="nav-item">
                         <a className="nav-link" href="/contactus">Contact Us</a>
@@ -71,16 +71,16 @@ const Footer: React.FC = () => {
                     <h4 className="text-white">LEGAL</h4>
                     <ul className="nav flex flex-col gap-y-2 py-4">
                       <li className="nav-item">
-                        <a className="nav-link" href="/About-Us">Legal Information</a>
+                        <a className="nav-link" href="/about-us">Legal Information</a>
                       </li>
                       <li className="nav-item">
-                        <a className="nav-link" href="/About-Us">Privacy Policy</a>
+                        <a className="nav-link" href="/about-us">Privacy Policy</a>
                       </li>
                       <li className="nav-item">
                         <a className="nav-link" href="/contactus">Report Abuse</a>
                       </li>
                       <li className="nav-item">
-                        <a className="nav-link" href="/About-Us">Terms of Service</a>
+                        <a className="nav-link" href="/about-us">Terms of Service</a>
                       </li>
                     </ul>
                   </div>
@@ -120,10 +120,10 @@ const Footer: React.FC = () => {
             <div className="hidden md:flex">
               <ul className='flex gap-8'>
                 <li>
-                  <a href="/About-Us">Privacy Policy</a>
+                  <a href="/about-us">Privacy Policy</a>
                 </li>
                 <li>
-                  <a href="/About-Us">Terms &amp; Conditions</a>
+                  <a href="/about-us">Terms &amp; Conditions</a>
                 </li>
               </ul>
             </div>

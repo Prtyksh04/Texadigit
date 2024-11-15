@@ -54,10 +54,10 @@ const BlogSection: React.FC = () => {
                         <hr className='border-2 border-[#e80566]' />
                         <div className="card-body p-4 h-full flex flex-col">
                             <h3 className="h5 mb-2 card-title flex-grow">
-                                <Link href="/Digital-Marketing" className="text-black text-lg font-semibold hover:text-[#e80566]">Digital Marketing</Link>
+                                <Link href="/digital-marketing" className="text-black text-lg font-semibold hover:text-[#e80566]">Digital Marketing</Link>
                             </h3>
                             <p className="text-[#707070] mb-4 flex-grow">We provide the best digital marketing campaigns including SEO, Email Marketing &amp; Social Media Marketing</p>
-                            <Link href="/Digital-Marketing" className="text-xs mt-2 flex items-center hover:text-[#e80566] text-black duration-300">
+                            <Link href="/digital-marketing" className="text-xs mt-2 flex items-center hover:text-[#e80566] text-black duration-300">
                                 Read More
                                 <FaArrowRight className="ml-1 text-xs" />
                             </Link>
@@ -74,10 +74,10 @@ const BlogSection: React.FC = () => {
                         <hr className='border-2 border-[#e80566]' />
                         <div className="card-body p-4 h-full flex flex-col">
                             <h3 className="h5 mb-2 card-title flex-grow">
-                                <Link href="/Website-Development" className="text-black text-lg font-semibold hover:text-[#e80566]">Website Development</Link>
+                                <Link href="/website-development" className="text-black text-lg font-semibold hover:text-[#e80566]">Website Development</Link>
                             </h3>
                             <p className="text-[#707070] mb-4 flex-grow">We provide the best Website Development Service in Asp.Net, PHP, WordPress &amp; Cordinator technology.</p>
-                            <Link href="/Website-Development" className="text-xs mt-2 flex items-center hover:text-[#e80566] text-black duration-300">
+                            <Link href="/website-development" className="text-xs mt-2 flex items-center hover:text-[#e80566] text-black duration-300">
                                 Read More
                                 <FaArrowRight className="ml-1 text-xs" />
                             </Link>
@@ -95,10 +95,10 @@ const BlogSection: React.FC = () => {
                         <hr className='border-2 border-[#e80566]' />
                         <div className="card-body p-4 h-full flex flex-col">
                             <h3 className="h5 mb-2 card-title flex-grow">
-                                <Link href="/App-Development" className="text-black text-lg font-semibold hover:text-[#e80566]">Mobile App Development</Link>
+                                <Link href="/app-development" className="text-black text-lg font-semibold hover:text-[#e80566]">Mobile App Development</Link>
                             </h3>
                             <p className="text-[#707070] mb-4 flex-grow">We provide the best Mobile App Development Services in iOS &amp; Android for all versions.</p>
-                            <Link href="/App-Development" className="text-xs mt-2 flex items-center hover:text-[#e80566] text-black duration-300">
+                            <Link href="/app-development" className="text-xs mt-2 flex items-center hover:text-[#e80566] text-black duration-300">
                                 Read More
                                 <FaArrowRight className="ml-1 text-xs" />
                             </Link>

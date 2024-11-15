@@ -1,33 +1,49 @@
 import Image from "next/image";
-import AboutUsHeader from "../components/OtherComponents/Header"
+import AboutUsHeader from "../components/OtherComponents/Header";
 import Link from "next/link";
 import CategoriesSection from "../components/Sidebar";
 import Footer from "../components/Footer";
 import Navbar from "../components/Navbar";
 import TextAdvice from "../components/TextAdvice";
+import Head from "next/head";
 
 const DataEntry = () => {
     return (
         <>
+            <Head>
+                <title>Data Entry Services - Accurate and Efficient Data Management</title>
+                <meta
+                    name="description"
+                    content="Our data entry services offer accurate, efficient, and timely solutions for all your business needs, including invoice data entry, form processing, and more."
+                />
+                <meta
+                    name="keywords"
+                    content="data entry, online data entry, data conversion, copy-paste work, legal data entry, invoice entry"
+                />
+                <meta property="og:title" content="Data Entry Services - Accurate and Efficient Data Management" />
+                <meta
+                    property="og:description"
+                    content="We provide reliable data entry services, including invoice data entry, label entry, and more. Outsource your data entry needs to us."
+                />
+                <meta property="og:image" content="/images/DataEntry.jpg" />
+                <meta property="og:url" content="yourwebsite.com/data-entry" />
+            </Head>
             <Navbar />
-            <AboutUsHeader
-                title="Data Entry"
-                breadcrumbText="Data Entry Work"
-            />
+            <AboutUsHeader title="Data Entry" breadcrumbText="Data Entry Work" />
             <div className="flex flex-col md:flex-row m-4 md:m-16 gap-4 md:gap-8">
                 <div className="w-full md:w-1/4">
                     <CategoriesSection />
                 </div>
                 <div className="w-full md:w-3/4">
                     <Image
-                        alt="Data-Entry"
+                        alt="Data Entry Services"
                         src="/images/DataEntry.jpg"
                         height={800}
                         width={1000}
                         className="w-full h-auto"
                     />
                     <h1 className="text-2xl md:text-3xl font-semibold mt-4">
-                        Data Entry Work
+                        Data Entry Services to Save Time & Enhance Accuracy
                     </h1>
                     <nav className="flex items-center gap-2 text-sm md:text-md text-gray-600">
                         <Link href="/" className="hover:underline">
@@ -51,11 +67,13 @@ const DataEntry = () => {
                         name="Daniel Keys Moran"
                     />
                     <p className="text-gray-600 mt-4 text-justify md:text-xl">
-                        Web development is that the first requirement of companies lately . Everyday a replacement company increase online arena making it swarming. the gang had made it tougher to form a definite segment out there. it is vital to possess a high quality website so on urge an honest visibility.
+                        In today&apos;s crowded online market, having accurate and efficient data is crucial for business success. Our data entry services help you stay ahead by ensuring your data is well-organized and accessible for effective decision-making.
                     </p>
                     <ol className="list-decimal ml-6 md:ml-12 text-gray-500 text-sm md:text-lg mt-4">
-                        <li>Simple Copy Paste Work</li>
+                        <li>Simple Copy-Paste Work</li>
                         <li>Typing Work</li>
+                        <li>Invoice Data Entry</li>
+                        <li>Legal Data Entry</li>
                     </ol>
                     <div className="mt-8 flex flex-wrap gap-x-4 gap-y-2 ml-0 md:ml-8">
                         <button className="bg-gray-200 py-2 px-4 rounded-md hover:bg-[#65258a] hover:text-white">WEB DEVELOPMENT</button>
@@ -67,7 +85,7 @@ const DataEntry = () => {
             </div>
             <Footer />
         </>
-    )
-}
+    );
+};
 
 export default DataEntry;

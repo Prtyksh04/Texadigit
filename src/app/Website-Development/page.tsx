@@ -5,16 +5,48 @@ import CategoriesSection from "../components/Sidebar";
 import Footer from "../components/Footer";
 import Navbar from "../components/Navbar";
 import TextAdvice from "../components/TextAdvice";
+import Head from "next/head";
 
 const WebsiteDevelopment = () => {
     return (
         <>
+            <Head>
+                <title>Website Development Services | Imagine Digi</title>
+                <meta name="description" content="Professional website development services to enhance your online presence. Get high-quality, responsive, and user-friendly websites tailored to your business needs." />
+                <meta name="keywords" content="Website Development, Web Design, Web Development Services, Responsive Websites, Professional Web Development" />
+                <meta name="robots" content="index, follow" />
+                <meta property="og:title" content="Website Development Services | Imagine Digi" />
+                <meta property="og:description" content="Professional website development services to enhance your online presence. Get high-quality, responsive, and user-friendly websites tailored to your business needs." />
+                <meta property="og:url" content="https://www.imaginedigi.com/website-development" />
+                <meta property="og:image" content="https://www.imaginedigi.com/images/Web_Development.jpeg" />
+                <meta name="twitter:title" content="Website Development Services | Imagine Digi" />
+                <meta name="twitter:description" content="Professional website development services to enhance your online presence. Get high-quality, responsive, and user-friendly websites tailored to your business needs." />
+                <meta name="twitter:image" content="https://www.imaginedigi.com/images/Web_Development.jpeg" />
+                <script type="application/ld+json">
+                    {`
+        {
+            "@context": "https://schema.org",
+            "@type": "Service",
+            "serviceType": "Website Development",
+            "provider": {
+                "@type": "Organization",
+                "name": "Imagine Digi",
+                "url": "https://www.imaginedigi.com",
+                "logo": "https://www.imaginedigi.com/logo.png"
+            },
+            "areaServed": "Worldwide",
+            "description": "Professional website development services including responsive and high-performing websites for businesses."
+        }
+        `}
+                </script>
+            </Head>
+
             <Navbar />
             <AboutUsHeader
                 title="Website Development"
                 breadcrumbText="Website Development"
             />
-            
+
             {/* Wrapper for responsive layout */}
             <div className="flex flex-col md:flex-row m-4 md:m-16 gap-4 md:gap-8">
                 {/* Sidebar section (smaller width) */}
@@ -26,7 +58,7 @@ const WebsiteDevelopment = () => {
                 <div className="w-full md:w-3/4">
                     {/* Responsive Image */}
                     <Image
-                        alt="WebDevelopment"
+                        alt="Web Development"
                         src="/images/Web_Development.jpeg"
                         height={700}
                         width={800}
