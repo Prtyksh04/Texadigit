@@ -1,7 +1,7 @@
 'use client'
 import React, { useState } from "react";
 import Navbar from "../components/Navbar";
-import { PhoneIcon,EnvelopeIcon, ChatBubbleLeftRightIcon } from "@heroicons/react/24/outline";
+import { PhoneIcon, EnvelopeIcon, ChatBubbleLeftRightIcon } from "@heroicons/react/24/outline";
 import { FaArrowRight } from 'react-icons/fa';
 import Footer from "../components/Footer";
 import AboutUsHeader from "../components/OtherComponents/Header";
@@ -14,6 +14,12 @@ const EnquiryNow = () => {
         mobile: "",
         message: "",
     });
+
+
+    const openGoogleMaps = () => {
+        const googleMapsUrl = `https://www.google.com/maps/search/?api=1&query=Sector+18,Gurugram,Haryana,122022`;
+        window.open(googleMapsUrl, '_blank');
+    };
 
     const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
         setFormData({ ...formData, [e.target.name]: e.target.value });
@@ -57,7 +63,7 @@ const EnquiryNow = () => {
             title: "Call Us",
             details: ["+91-9871610154", "+91-7988695795", "+91-9711679777"],
         },
-        
+
         {
             icon: <EnvelopeIcon className="h-10 w-10" />,
             title: "Mail Us",
@@ -159,7 +165,9 @@ const EnquiryNow = () => {
                         <p className="text-gray-600 mt-4">
                             Seamlessly deliver pandemic e-services and next-generation initiatives.
                         </p>
-                        <button className="mt-6 inline-flex items-center px-4 py-2 border border-purple-500 text-purple-600 rounded-lg hover:bg-purple-100 text-center my-2">
+                        <button className="mt-6 inline-flex items-center px-4 py-2 border border-purple-500 text-purple-600 rounded-lg hover:bg-purple-100 text-center my-2"
+                            onClick={openGoogleMaps}
+                        >
                             Get Directions
                             <FaArrowRight className="ml-2 mt-1 text-xs text-black" />
                         </button>

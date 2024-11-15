@@ -23,11 +23,11 @@ const DigitalMarketing = () => {
                 <meta name="robots" content="index, follow" />
                 <meta property="og:title" content="Digital Marketing Services | Grow Your Business with Imagine Digi" />
                 <meta property="og:description" content="Professional digital marketing services for SEO, PPC, Social Media Marketing, and more to help businesses boost their online presence and drive sales." />
-                <meta property="og:url" content="https://www.imaginedigi.com/digitalmarketing" />
-                <meta property="og:image" content="https://www.imaginedigi.com/images/DigitalMarketing.jpg" />
+                <meta property="og:url" content="https://www.imaginedigi.com/Digital-Marketing" />
+                <meta property="og:image" content="https://www.imaginedigi.com/images/Digital-Marketing.jpg" />
                 <meta name="twitter:title" content="Digital Marketing Services | Grow Your Business with Imagine Digi" />
                 <meta name="twitter:description" content="Comprehensive digital marketing services including SEO, PPC, Email Marketing, Social Media Marketing, and more to help businesses achieve growth online." />
-                <meta name="twitter:image" content="https://www.imaginedigi.com/images/DigitalMarketing.jpg" />
+                <meta name="twitter:image" content="https://www.imaginedigi.com/images/Digital-Marketing.jpg" />
                 <script type="application/ld+json">
                     {`
                     {

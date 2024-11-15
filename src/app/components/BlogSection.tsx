@@ -46,7 +46,7 @@ const BlogSection: React.FC = () => {
 
                     <div className="w-full sm:w-1/2 md:w-1/4 h-full mb-6 shadow-lg bg-white rounded-lg overflow-hidden transition-transform transform hover:scale-105 duration-300">
                         <div className="relative">
-                            <Image src="/images/DigitalMarketing.jpg" className="card-img-top h-48 w-full object-cover" alt="Website Development" width={200} height={200} />
+                            <Image src="/images/DigitalMarketing.jpg" className="card-img-top h-48 w-full object-cover" alt="Digital Markeeting" width={200} height={200} />
                             <div className="meta-date text-yellow-500 text-3xl absolute top-2 left-2">
                                 <i className="fa fa-star" aria-hidden="true"></i>
                             </div>
@@ -54,10 +54,10 @@ const BlogSection: React.FC = () => {
                         <hr className='border-2 border-[#e80566]' />
                         <div className="card-body p-4 h-full flex flex-col">
                             <h3 className="h5 mb-2 card-title flex-grow">
-                                <Link href="/digitalmarketing" className="text-black text-lg font-semibold hover:text-[#e80566]">Digital Marketing</Link>
+                                <Link href="/Digital-Marketing" className="text-black text-lg font-semibold hover:text-[#e80566]">Digital Marketing</Link>
                             </h3>
                             <p className="text-[#707070] mb-4 flex-grow">We provide the best digital marketing campaigns including SEO, Email Marketing &amp; Social Media Marketing</p>
-                            <Link href="/digitalmarketing" className="text-xs mt-2 flex items-center hover:text-[#e80566] text-black duration-300">
+                            <Link href="/Digital-Marketing" className="text-xs mt-2 flex items-center hover:text-[#e80566] text-black duration-300">
                                 Read More
                                 <FaArrowRight className="ml-1 text-xs" />
                             </Link>
@@ -74,10 +74,10 @@ const BlogSection: React.FC = () => {
                         <hr className='border-2 border-[#e80566]' />
                         <div className="card-body p-4 h-full flex flex-col">
                             <h3 className="h5 mb-2 card-title flex-grow">
-                                <Link href="/webdevelopment" className="text-black text-lg font-semibold hover:text-[#e80566]">Website Development</Link>
+                                <Link href="/Website-Development" className="text-black text-lg font-semibold hover:text-[#e80566]">Website Development</Link>
                             </h3>
                             <p className="text-[#707070] mb-4 flex-grow">We provide the best Website Development Service in Asp.Net, PHP, WordPress &amp; Cordinator technology.</p>
-                            <Link href="/webdevelopment" className="text-xs mt-2 flex items-center hover:text-[#e80566] text-black duration-300">
+                            <Link href="/Website-Development" className="text-xs mt-2 flex items-center hover:text-[#e80566] text-black duration-300">
                                 Read More
                                 <FaArrowRight className="ml-1 text-xs" />
                             </Link>
@@ -95,10 +95,10 @@ const BlogSection: React.FC = () => {
                         <hr className='border-2 border-[#e80566]' />
                         <div className="card-body p-4 h-full flex flex-col">
                             <h3 className="h5 mb-2 card-title flex-grow">
-                                <Link href="/appdevelopment" className="text-black text-lg font-semibold hover:text-[#e80566]">Mobile App Development</Link>
+                                <Link href="/App-Development" className="text-black text-lg font-semibold hover:text-[#e80566]">Mobile App Development</Link>
                             </h3>
                             <p className="text-[#707070] mb-4 flex-grow">We provide the best Mobile App Development Services in iOS &amp; Android for all versions.</p>
-                            <Link href="/appdevelopment" className="text-xs mt-2 flex items-center hover:text-[#e80566] text-black duration-300">
+                            <Link href="/App-Development" className="text-xs mt-2 flex items-center hover:text-[#e80566] text-black duration-300">
                                 Read More
                                 <FaArrowRight className="ml-1 text-xs" />
                             </Link>

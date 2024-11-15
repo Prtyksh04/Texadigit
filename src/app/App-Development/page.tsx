@@ -24,7 +24,7 @@ const AppDevelopment = () => {
                 <meta name="robots" content="index, follow" />
                 <meta property="og:title" content="Mobile App Development Services | Imagine Digi" />
                 <meta property="og:description" content="Professional mobile app development services for iPhone and Android. Custom mobile applications built to meet your business needs." />
-                <meta property="og:url" content="https://www.imaginedigi.com/appdevelopment" />
+                <meta property="og:url" content="https://www.imaginedigi.com/App-Development" />
                 <meta property="og:image" content="https://www.imaginedigi.com/images/MobileApp.jpg" />
                 <meta name="twitter:title" content="Mobile App Development Services | Imagine Digi" />
                 <meta name="twitter:description" content="Professional mobile app development services for iPhone and Android. Custom mobile applications built to meet your business needs." />

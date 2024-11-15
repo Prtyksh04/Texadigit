@@ -25,8 +25,8 @@ const DataEntry = () => {
                     property="og:description"
                     content="We provide reliable data entry services, including invoice data entry, label entry, and more. Outsource your data entry needs to us."
                 />
-                <meta property="og:image" content="/images/DataEntry.jpg" />
-                <meta property="og:url" content="yourwebsite.com/dataentry" />
+                <meta property="og:image" content="/images/Data-Entry.jpg" />
+                <meta property="og:url" content="yourwebsite.com/Data-Entry" />
             </Head>
             <Navbar />
             <AboutUsHeader title="Data Entry" breadcrumbText="Data Entry Work" />
