@@ -20,6 +20,7 @@ const geistMono = localFont({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL('https://imaginedigi.com'),
   title: "Imagine Digi",
   description: "Website Development Company | App Development Company | Digital Marketing Company | Data Entry Company",
   openGraph: {
