@@ -78,7 +78,7 @@ const Navbar: React.FC = () => {
 
     return (
         <header className="header">
-            <nav className="navbar fixed top-0 w-full bg-gradient-to-r from-[#65258a] to-[#e60667] text-white shadow-lg z-50 backdrop-blur-lg">
+            <nav className="navbar fixed top-0 w-full bg-gradient-to-r from-[#005eff] to-[#608BC1] text-white shadow-lg z-50 backdrop-blur-lg">
                 <div className="container mx-auto flex items-center justify-between px-4 py-2">
                     <Link href="/" className="text-lg font-bold text-white">
                         <Image src="/images/png/Colorlogo-nobackground.png"

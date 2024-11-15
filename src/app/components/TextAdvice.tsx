@@ -11,7 +11,7 @@ const TextAdvice = ({advice , name} : TextAdviceProps) => {
             <div className="flex w-4/5 h-auto gap-x-8 mt-4 mb-8 ml-8">
                 <div className="border-l-2 border-[#e80566] h-32"></div>
                 <div>
-                    <h3 className="text-xl text-justify mt-2">
+                    <h3 className="md:text-xl text-justify mt-2 text-sm">
                         {advice}
                     </h3>
                     <div className="flex">

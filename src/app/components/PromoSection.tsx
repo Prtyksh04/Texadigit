@@ -9,29 +9,29 @@ const PromoSection: React.FC = () => {
                 <div className="flex flex-wrap">
                     {/* First Promo Item */}
                     <div className="w-full md:w-1/2 lg:w-1/4 p-4">
-                        <div className="bg-[#ffdce5] p-5 text-center rounded-lg shadow-lg flex flex-col items-center justify-center h-48">
-                            <FaGlobe className="text-4xl mb-4" style={{ color: '#ff164e' }} />
+                        <div className="bg-[#F3F3E0] p-5 text-center rounded-lg shadow-lg flex flex-col items-center justify-center h-48">
+                            <FaGlobe className="text-4xl mb-4" style={{ color: '#005eff' }} />
                             <h5 className="mb-0 font-semibold text-lg">Best Website Development</h5>
                         </div>
                     </div>
                     {/* Second Promo Item */}
                     <div className="w-full md:w-1/2 lg:w-1/4 p-4">
-                        <div className="bg-[#ffdce5] p-5 text-center rounded-lg shadow-lg flex flex-col items-center justify-center h-48">
-                            <FaUser className="text-4xl mb-4" style={{ color: '#ff164e' }} />
+                        <div className="bg-[#F4F6FF] p-5 text-center rounded-lg shadow-lg flex flex-col items-center justify-center h-48">
+                            <FaUser className="text-4xl mb-4" style={{ color: '#005eff' }} />
                             <h5 className="mb-0 font-semibold text-lg">99.9% Client <br />Satisfaction</h5>
                         </div>
                     </div>
                     {/* Third Promo Item */}
                     <div className="w-full md:w-1/2 lg:w-1/4 p-4">
-                        <div className="bg-[#ffdce5] p-5 text-center rounded-lg shadow-lg flex flex-col items-center justify-center h-48">
-                            <FaBriefcase className="text-4xl mb-4" style={{ color: '#ff164e' }} />
+                        <div className="bg-[#B9E5E8] p-5 text-center rounded-lg shadow-lg flex flex-col items-center justify-center h-48">
+                            <FaBriefcase className="text-4xl mb-4" style={{ color: '#005eff' }} />
                             <h5 className="mb-0 font-semibold text-lg">Grow Your Business <br /> Now</h5>
                         </div>
                     </div>
                     {/* Fourth Promo Item */}
                     <div className="w-full md:w-1/2 lg:w-1/4 p-4">
-                        <div className="bg-[#ffdce5] p-5 text-center rounded-lg shadow-lg flex flex-col items-center justify-center h-48">
-                            <FaAward className="text-4xl mb-4" style={{ color: '#ff164e' }} />
+                        <div className="bg-[#C6E7FF] p-5 text-center rounded-lg shadow-lg flex flex-col items-center justify-center h-48">
+                            <FaAward className="text-4xl mb-4" style={{ color: '#005eff' }} />
                             <h5 className="mb-0 font-semibold text-lg">Customers First <br /> Priority</h5>
                         </div>
                     </div>

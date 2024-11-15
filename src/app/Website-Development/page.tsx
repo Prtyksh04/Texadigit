@@ -50,10 +50,10 @@ const WebsiteDevelopment = () => {
                     </nav>
 
                     {/* Content paragraphs */}
-                    <p className="text-gray-600 mt-4 text-justify md:text-xl">
+                    <p className="text-gray-600 mt-4 text-justify md:text-lg text-sm">
                         Your website represents your brand. A site that’s slow, unreliable, or difficult to use may drive customers and prospects away. Internal teams also suffer when small website changes are slow to implement, and larger changes seem impossible.
                     </p>
-                    <p className="text-gray-600 mt-4 text-justify md:text-xl">
+                    <p className="text-gray-600 mt-4 text-justify md:text-lg text-sm">
                         Starting a web development project may feel overwhelming, leading businesses to stick with the status quo—risking missed opportunities and competitive disadvantages.
                         With over 5 years of experience developing on leading CMS platforms and a well-refined project management process, Blue Fountain Media builds high-performing sites across various industries. We’ve tackled numerous challenges for our clients and achieved exceptional results along the way.
                     </p>
@@ -61,11 +61,11 @@ const WebsiteDevelopment = () => {
                     {/* Text Advice component */}
                     <TextAdvice
                         advice="We introduce a specific strategy on the thought of which the website design and development are executed."
-                        name="Mr. Vikas Sain."
+                        name="Mr. Sanjay Arora"
                     />
 
                     {/* Another paragraph */}
-                    <p className="text-gray-600 mt-4 text-base md:text-xl">
+                    <p className="text-gray-600 mt-4 text-base md:text-lg text-sm">
                         Web development is the first requirement of companies today. Everyday new companies emerge in the online arena, making it crowded. It’s important to have a quality website to ensure good visibility.
                     </p>
 
@@ -77,7 +77,7 @@ const WebsiteDevelopment = () => {
                     </ol>
 
                     {/* Button group */}
-                    <div className="mt-4 flex flex-wrap gap-x-4 gap-y-2 ml-0 md:ml-8">
+                    <div className="mt-4 flex flex-wrap gap-x-4 gap-y-2 ml-0 md:ml-8 text-sm">
                         <button className="bg-gray-200 py-2 px-4 rounded-md hover:bg-[#65258a] hover:text-white">SEO</button>
                         <button className="bg-gray-200 py-2 px-4 rounded-md hover:bg-[#65258a] hover:text-white">DIGITAL MARKETING</button>
                         <button className="bg-gray-200 py-2 px-4 rounded-md hover:bg-[#65258a] hover:text-white">APP DEVELOPMENT</button>

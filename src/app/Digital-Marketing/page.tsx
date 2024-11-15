@@ -38,19 +38,19 @@ const DigitalMarketing = () => {
                             Grow your Business
                         </Link>
                     </nav>
-                    <p className="text-gray-600 mt-4 text-justify md:text-xl">
+                    <p className="text-gray-600 mt-4 text-justify md:text-lg text-sm">
                         Every large and small business requires digital marketing services. We offer a complete range of digital marketing campaigns including SEO, PPC, Email Marketing, Social Media Marketing, and Local Business listings to help increase business revenue.
                     </p>
 
-                    <p className="text-gray-600 mt-4 text-justify md:text-xl">
+                    <p className="text-gray-600 mt-4 text-justify md:text-lg text-sm">
                         <strong className="text-gray-500">Grow Your Business</strong> — we&apos;ll offer a 360° digital marketing service that drives traffic, increases sales, and delivers a 100% return on investment. We&apos;ve helped over 1,000 customers grow their online businesses through an effective digital marketing mix and advanced technologies.
                     </p>
 
                     <TextAdvice
-                        advice="We are one of Jaipur&apos;s largest digital marketing service providers, with a highly innovative team of internet marketing specialists."
-                        name="Mr. Nitin Chanchlani"
+                        advice="We are one of Gurgaon&apos;s largest digital marketing service providers, with a highly innovative team of internet marketing specialists."
+                        name="Mr. Varun Khaitan"
                     />
-                    <p className="text-gray-600 mt-4 text-justify md:text-xl">
+                    <p className="text-gray-600 mt-4 text-justify md:text-lg text-sm">
                         Digital Marketing may be a very wide function, it can include everything from online brand reputation, market price , PR (PR), product, and services pricing and lots of more. Mostly we specialise in the marketing communications side of the equation and the way this compares to finish client sales.
                     </p>
                     <ol className="list-decimal ml-6 md:ml-12 text-gray-500 text-sm md:text-lg mt-4">
@@ -60,7 +60,7 @@ const DigitalMarketing = () => {
                         <li>Social Media Marketing</li>
                         <li>PPC (Per Page Click)</li>
                     </ol>
-                    <div className="mt-8 flex flex-wrap gap-x-4 gap-y-2 ml-0 md:ml-8">
+                    <div className="mt-8 flex flex-wrap gap-x-4 gap-y-2 ml-0 md:ml-8 text-sm">
                         <button className="bg-gray-200 py-2 px-2 rounded-md hover:bg-[#65258a] hover:text-white whitespace-nowrap">WEB DEVELOPMENT</button>
                         <button className="bg-gray-200 py-2 px-2 rounded-md hover:bg-[#65258a] hover:text-white whitespace-nowrap">APP DEVELOPMENT</button>
                         <button className="bg-gray-200 py-2 px-2 rounded-md hover:bg-[#65258a] hover:text-white whitespace-nowrap">DATA ENTRY</button>

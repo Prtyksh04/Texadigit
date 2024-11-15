@@ -54,7 +54,7 @@ export function MagicCardDemo() {
 
             <MagicCard
                 className="relative cursor-pointer flex-col items-center justify-center shadow-xl whitespace-nowrap text-center text-4xl"
-                gradientColor={"#ffdce5"}
+                gradientColor={"#C9E6F0"}
             >
                 <div className="mb-4 flex flex-col items-center">
                     <GiSmartphone className="text-[#AE445A] mb-2 text-4xl md:text-6xl" />
