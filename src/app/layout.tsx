@@ -22,8 +22,20 @@ const geistMono = localFont({
 export const metadata: Metadata = {
   title: "Imagine Digi",
   description: "Website Development Company | App Development Company | Digital Marketing Company | Data Entry Company",
-};
+  openGraph: {
+    title: "Imagine Digi",
+    description: "Website Development Company | App Development Company | Digital Marketing Company | Data Entry Company",
+    images: [
+      {
+        url: "/images/Colorlogo-nobackground.png",
+        width: 800,
+        height: 800,
+        alt: "Imagine Digi Logo",
+      },
+    ],
+  },
 
+};
 export default function RootLayout({
   children,
 }: Readonly<{

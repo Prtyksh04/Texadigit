@@ -33,7 +33,7 @@ const BlogSection: React.FC = () => {
             <div className="container mx-auto relative z-10">
                 <div className="text-center mb-5">
                     <strong className="text-[#e80566] font-normal mb-2">Our Services</strong>
-                    <h1 className='text-3xl font-semibold mb-4'>What Can We Do For You</h1>
+                    <h2 className='text-3xl font-semibold mb-4'>What Can We Do For You</h2>
                     <p className="lead mb-4">
                         Get your attractive website at the lowest cost and show your website on the first page of <br />
                         Google to attract thousands of customers.
