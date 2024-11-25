@@ -105,7 +105,7 @@ const Testimonials = () => {
                                 100% accuracy.
                             </p>
                             <h3>
-                                <Link href="https://g.page/texadigit/review?mp" className="text-[#e80566] hover:underline">
+                                <Link href="#" className="text-black font-semibold hover:underline">
                                     Give Your Review
                                 </Link>
                             </h3>

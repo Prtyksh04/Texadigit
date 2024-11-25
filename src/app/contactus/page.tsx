@@ -174,7 +174,7 @@ const EnquiryNow = () => {
                     </div>
                     <hr className="w-5/6 text-center ml-6" />
                     <div>
-                        <h3 className="text-xl font-semibold">Our Headquarters</h3>
+                        <h3 className="text-xl font-semibold">Get in touch</h3>
                         <p className="text-gray-400 mt-1 font-normal mb-2">
                             Phone: +91-7988695795, +91-9871610154, +91-9711679777
                         </p>

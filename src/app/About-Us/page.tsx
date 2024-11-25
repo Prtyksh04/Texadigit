@@ -32,7 +32,7 @@ const AboutUs = () => {
 
                     <div className="space-y-2">
                         <p><strong>Phone:</strong> +91-9871610154, +91-79886959795</p>
-                        <p><strong>Email:</strong> support@texadigit.in</p>
+                        <p><strong>Email:</strong> office@imaginedigi.com</p>
                     </div>
 
                     <p className="text-gray-600 mt-4 md:text-xl text-lg">
