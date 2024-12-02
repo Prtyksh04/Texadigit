@@ -108,44 +108,6 @@ const Navbar: React.FC = () => {
                                 <Link href="/" className="block py-2 px-4 rounded transition-colors duration-300">Home</Link>
                             </li>
 
-                            {/* About Dropdown */}
-                            <li className="relative group">
-                                <div
-                                    className="flex items-center justify-between py-2 px-4 rounded cursor-pointer transition-colors duration-300"
-                                    onClick={(e) => toggleDropdown('about', e)}
-                                >
-                                    About
-                                    <svg
-                                        className={`ml-2 h-4 w-4 transition-transform duration-500 ${isAboutOpen ? 'rotate-180' : ''}`}
-                                        xmlns="http://www.w3.org/2000/svg"
-                                        fill="none"
-                                        viewBox="0 0 24 24"
-                                        stroke="currentColor"
-                                    >
-                                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
-                                    </svg>
-                                </div>
-
-                                {/* About Dropdown Menu */}
-                                <div
-                                    className={`lg:absolute left-0 mt-0 w-full lg:w-48 bg-white shadow-md rounded-md overflow-hidden z-20 transition-all duration-300 ease-in-out ${isAboutOpen ? 'block' : 'hidden'
-                                        }`}
-                                >
-                                    <ul>
-                                        <li>
-                                            <Link href="/About-Us" className="block px-4 py-2 text-sm text-gray-700 hover:bg-[#65258a] hover:text-white transition-colors">
-                                                About Us
-                                            </Link>
-                                        </li>
-                                        <li>
-                                            <Link href="/About-Team" className="block px-4 py-2 text-sm text-gray-700 hover:bg-[#65258a] hover:text-white transition-colors">
-                                                About Team
-                                            </Link>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </li>
-
                             {/* Services Dropdown */}
                             <li className="relative group">
                                 <div
@@ -311,13 +273,48 @@ const Navbar: React.FC = () => {
                                 </div>
                             </li>
 
-                            {/* Other Links */}
-                            {/* <li className="relative group">
-                                <Link href="/projects" className="block py-2 px-4 rounded transition-colors duration-300">Projects</Link>
-                            </li> */}
                             <li className="relative group">
                                 <Link href="/OurSolution" className="block py-2 px-4 rounded transition-colors duration-300">Our Solutions</Link>
                             </li>
+
+                            {/* About Dropdown */}
+                            <li className="relative group">
+                                <div
+                                    className="flex items-center justify-between py-2 px-4 rounded cursor-pointer transition-colors duration-300"
+                                    onClick={(e) => toggleDropdown('about', e)}
+                                >
+                                    About
+                                    <svg
+                                        className={`ml-2 h-4 w-4 transition-transform duration-500 ${isAboutOpen ? 'rotate-180' : ''}`}
+                                        xmlns="http://www.w3.org/2000/svg"
+                                        fill="none"
+                                        viewBox="0 0 24 24"
+                                        stroke="currentColor"
+                                    >
+                                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
+                                    </svg>
+                                </div>
+
+                                {/* About Dropdown Menu */}
+                                <div
+                                    className={`lg:absolute left-0 mt-0 w-full lg:w-48 bg-white shadow-md rounded-md overflow-hidden z-20 transition-all duration-300 ease-in-out ${isAboutOpen ? 'block' : 'hidden'
+                                        }`}
+                                >
+                                    <ul>
+                                        <li>
+                                            <Link href="/About-Us" className="block px-4 py-2 text-sm text-gray-700 hover:bg-[#65258a] hover:text-white transition-colors">
+                                                About Us
+                                            </Link>
+                                        </li>
+                                        <li>
+                                            <Link href="/About-Team" className="block px-4 py-2 text-sm text-gray-700 hover:bg-[#65258a] hover:text-white transition-colors">
+                                                About Team
+                                            </Link>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+
                             <li className="relative group">
                                 <Link href="/contactus" className="block py-2 px-4 rounded transition-colors duration-300">Contact Us</Link>
                             </li>
